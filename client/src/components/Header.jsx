@@ -3,17 +3,20 @@ import React from "react";
 const Header = () => {
   return (
     <div id="home">
-      <header class="bg-dark py-5 header-bg" >
+      <header class="bg-dark py-5 header-bg header-background" >
+      <video autoPlay loop muted id='video'>
+        <source src="../public/asset/video/Kavaify.mp4" type="video/mp4"/>
+      </video>
         <div class="container px-5">
           <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">
-              <div class="text-center my-5">
+              <div class="text-center my-5 pb-5">
                 <h1 class="display-5 fw-bolder text-white mb-2">
-                  Welcome To Kavaify, Your Only Web Solution
+                  Welcome To Kavaify
                 </h1>
-                <p class="lead text-white-50 mb-4">
-                  A better way of building your elegant website, no more boring and unprofessional WordPress websites, let the professionals help.
-                </p>
+                <h4 class="lead text-white-50 mb-4">
+                  Web Solution For Small Business Owners
+                </h4>
                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                   <a
                     class="btn btn-primary btn-lg px-4 me-sm-3"

@@ -11325,24 +11325,10 @@ textarea.form-control-lg {
   border-top-right-radius: 0;
 }
 
-/*  */
-.square {
-  border-radius: 8px;
-  opacity: 0;
-  transform: scale(1.2);
-}
+.header-background {
+  background-image: url("../public/asset/img/keyboard.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
 
-@media (prefers-reduced-motion: no-preference) {
-.square {
-  transition: opacity 1.5s ease, transform 1.5s ease;
-}
-}
-
-.square-transition {
-  opacity: 1;
-  transform: none;
-}
-
-.    {
-  background-image: url(../public/asset/video/Kavaify.mp4);
 }

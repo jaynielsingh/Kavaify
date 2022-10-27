@@ -1,16 +1,18 @@
 import React from "react";
+import AOS from "aos";
 
 const Features = () => {
-
+  AOS.init();
   return (
     <div>
       <section class="py-5 border-bottom" id="features">
         <div class="container px-5 my-5">
           <div class="row px-5 gx-5">
-            <div class="col-lg-4 mb-5 mb-lg-0">
-              <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+            <div data-aos="fade-down-left" class="col-lg-4 mb-5 mb-lg-0">
+              <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 features-animate">
                 <i class="bi bi-collection"></i>
               </div>
+
               <h2 class="h4 fw-bolder">Professionally Built Website</h2>
               <p>
                 Your site will be professionally built, and made to attract more
@@ -23,7 +25,7 @@ const Features = () => {
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
-            <div class="col-lg-4 mb-5 mb-lg-0">
+            <div data-aos="fade-up-left" class="col-lg-4 mb-5 mb-lg-0">
               <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                 <i class="bi bi-building"></i>
               </div>
@@ -39,7 +41,7 @@ const Features = () => {
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
-            <div class="col-lg-4">
+            <div data-aos="fade-up-right" class="col-lg-4">
               <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                 <i class="bi bi-toggles2"></i>
               </div>
