@@ -3,102 +3,74 @@ import React from "react";
 const Pricing = () => {
   return (
     <div id="pricing">
-      <section class="bg-light py-5 border-bottom">
-        <div class="container px-5 my-5">
-          <div class="text-center mb-5">
-            <h2 class="fw-bolder">Pricing Plan</h2>
-            <p class="lead mb-0">Our Best Pricing </p>
-          </div>
-
-          <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6 col-xl-4 mx-5">
-              <div class="card mb-5 mb-xl-0">
-                <div class="card-body p-5">
-                  <div class="small text-uppercase fw-bold text-muted">
-                    Standard
-                  </div>
-                  <div class=" mb-3">
-                    <span
-                      style={{ textDecoration: "line-through", color: "red" }}
-                      class="display-4 fw-bold"
-                    >
-                      $5000
-                    </span>
-                    <span>Regular</span>
-                  </div>
-
-                  <div class="mb-3">
-                    <span style={{color: "green"}} class="display-4 fw-bold">$1000</span>
-                    <span class="text-muted" > Sale</span>
-                  </div>
-
-                  <ul class="list-unstyled mb-4">
-                    <li class="mb-2">
-                      <i class="bi bi-check text-primary"></i>
-                      <strong>1-10 pages</strong>
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check text-primary"></i>
-                      Professionally Designed
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check text-primary"></i>
-                      Includes domain name
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check text-primary"></i>
-                      SEO Optimization
-                    </li>
-                  </ul>
-                  <div class="d-grid">
-                    <a class="btn btn-outline-primary" href="#!">
-                      Choose plan
-                    </a>
-                  </div>
-                </div>
-              </div>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Free</h4>
             </div>
-
-            <div class="col-lg-6 col-xl-4">
-              <div class="card mb-5 mb-xl-0">
-                <div class="card-body p-5">
-                  <div class="small text-uppercase fw-bold">
-                    <i class="bi bi-star-fill text-warning"></i>
-                    Service Fee
-                  </div>
-                  <div class="mb-3">
-                    <span class="display-4 fw-bold">$59</span>
-                    <span class="text-muted">/ mo.</span>
-                  </div>
-                  <ul class="list-unstyled mb-4">
-                    <li class="mb-2">
-                      <i class="bi bi-check text-primary"></i>
-                      <strong>Business Email Address</strong>
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check text-primary"></i>
-                      <strong>Site Maintenance </strong>
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check text-primary"></i>
-                      24/7 Dedicated support
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check text-primary"></i>
-                      Software Updates
-                    </li>
-                  </ul>
-                  <div class="d-grid">
-                    <a class="btn btn-primary" href="#!">
-                      Choose plan
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $0<small class="text-muted fw-light">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10 users included</li>
+                <li>2 GB of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button
+                type="button"
+                class="w-100 btn btn-lg btn-outline-primary"
+              >
+                Sign up for free
+              </button>
             </div>
           </div>
         </div>
-      </section>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $15<small class="text-muted fw-light">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>20 users included</li>
+                <li>10 GB of storage</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Enterprise</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $29<small class="text-muted fw-light">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

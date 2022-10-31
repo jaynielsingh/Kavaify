@@ -2,20 +2,20 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Features from "./components/Features";
-import Pricing from "./components/Pricing";
+// import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-import Register from "./components/Register";
+// import Register from "./components/Register";
+import About from "./components/About";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Header />
-      <Pricing />
+      <About />
+      <Features />
       <Contact />
-      <Features/>
-      <Register/>
       <Footer />
     </div>
   );

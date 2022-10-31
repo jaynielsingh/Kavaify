@@ -3,10 +3,10 @@ import React from "react";
 const Contact = () => {
   return (
     <div id="contact">
-      <section class="bg-light py-5">
-        <div class="container px-5 my-5 px-5">
+      <section class=" text-white py-5">
+        <div class=" px-5 my-5 px-5">
           <div class="text-center mb-5">
-            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+            <div class="feature contact-icon  bg-gradient text-white rounded-3 mb-3">
               <i class="bi bi-envelope"></i>
             </div>
             <h2 class="fw-bolder">Get in touch</h2>
@@ -26,7 +26,7 @@ const Contact = () => {
                 ></textarea>
                 <div class="d-grid">
                   <button
-                    class="btn btn-primary btn-lg disabled"
+                    class="btn bg-dark btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
                     id="submitButton"
                     type="submit"
                   >

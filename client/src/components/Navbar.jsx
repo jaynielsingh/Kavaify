@@ -1,14 +1,18 @@
 import React from "react";
+import logo from "../Kavaify.png";
 
 const Navbar = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container px-5">
-          <a class="navbar-brand" href="#home">
-          <img src="/client/public/asset/logo/KV.png" alt=""/>
-            Kavaify
-          </a>
+          <div>
+            <a class="navbar-brand" href="#home">
+              <img src={logo} alt="" width="50" height="40" class="logo me-4" />
+              Kavaify
+            </a>
+          </div>
+
           <button
             class="navbar-toggler"
             type="button"
