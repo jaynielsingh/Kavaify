@@ -1,0 +1,25 @@
+.feature-card {
+  background-color: #20c997;
+  margin-bottom: 7rem;
+}
+
+.feature-icon {
+  background-color: #000;
+  padding: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 40%;
+}
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  font-size: 2rem;
+}
+
+#features {
+  padding: 7% 15%;
+  background-color: #000;
+}

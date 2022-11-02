@@ -1,0 +1,14 @@
+.header-background {
+  background-image: url("keyboard.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.header-style {
+  font-family: "Great Vibes", cursive;
+  font-size: 150px;
+  font-weight: bolder;
+}
+
+.heading-title {
+  font-family: "Great Vibes", cursive;
+}
