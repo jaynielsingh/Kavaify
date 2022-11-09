@@ -6,10 +6,8 @@ const Header = () => {
   AOS.init();
   return (
     <div id="home">
-      <header class="bg-dark py-5 header-bg header-background">
-        <video autoPlay loop muted id="video">
-          <source src="../public/asset/video/Kavaify.mp4" type="video/mp4" />
-        </video>
+      <header class="bg-dark py-5 header-background">
+        <video autoPlay loop muted poster="../public/asset/video/Kavaify.mp4" >...</video>
         <div class="container px-5">
           <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">

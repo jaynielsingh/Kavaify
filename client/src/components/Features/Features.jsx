@@ -15,6 +15,7 @@ const Features = () => {
               data-aos-duration="2000"
               data-aos-easing="ease-in-sine"
               class="container card feature-card rounded-3 text-white"
+              
             >
               <div class="feature feature-icon col-lg-4  rounded-5 ">
                 <i class="bi bi-collection"></i>

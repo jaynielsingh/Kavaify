@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./Kavaify.png"
 import "./navbar.styles.css"
 
+
 const Navbar = () => {
   return (
     <div>
@@ -53,7 +54,7 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <div class="ms-3" id="google_translate_element"></div>
+            <div class="mt-3 ms-3 " id="google_translate_element"></div>
           </div>
         </div>
       </nav>
