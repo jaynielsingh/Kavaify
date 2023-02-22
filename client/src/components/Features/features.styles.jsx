@@ -3,7 +3,6 @@ export const itemStyles = {
   flexDirection: "column",
   alignItems: "center",
   px: 5,
-
 };
 
 export const featureStyles = {

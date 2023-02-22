@@ -1,37 +1,34 @@
-import {
-  Box,
-  Card,
-  CardContent,
-  Container,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 
 import React from "react";
 import { services } from "./const/servicesItems";
-import { featureStyles, itemStyles } from "./services.styles";
+import { featureStyles } from "./services.styles";
 import FeatureCard from "../common/FeatureCards/FeatureCard";
 
 const Services = () => {
   return (
-    <>
-      <Container maxWidth="lg" sx={featureStyles.sectionWrapper}>
-        <Grid container spacing={1}>
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+    <Box id="services" component="section">
+      <Typography variant="h2" align="center" sx={{ mt: 20 }}>
+        What We Offer
+      </Typography>
+      <Box sx={featureStyles.sectionWrapper}>
+        <Container sx={featureStyles.containerWrapper}>
+          <Grid container spacing={5}>
             {services.map((service) => (
-              <FeatureCard
-                key={service.id}
-                id={service.id}
-                icon={service.icon}
-                title={service.title}
-                content={service.content}
-
-              />
+              <Grid key={service.id} item xs={12} md={4}>
+                <FeatureCard
+                  id={service.id}
+                  icon={service.icon}
+                  title={service.title}
+                  content={service.content}
+                />
+              </Grid>
             ))}
           </Grid>
-        </Grid>
-      </Container>
-    </>
+        </Container>
+      </Box>
+    </Box>
+
     // <>
     //   <Box component="section" sx={featureStyles.sectionWrapper}>
     //     <Container>

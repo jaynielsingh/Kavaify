@@ -26,8 +26,8 @@ export default function NavBar() {
   };
 
   return (
-    <AppBar position="sticky">
-      <Container maxWidth="xl">
+    <AppBar position="fixed" sx={{borderRadius: '25px', bgcolor: 'black'}} >
+      <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <Typography
             variant="h6"

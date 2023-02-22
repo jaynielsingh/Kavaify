@@ -3,7 +3,6 @@ export const itemStyles = {
   flexDirection: "column",
   alignItems: "center",
   px: 5,
-  py: 5,
   "&:hover": {
     py: 5,
     boxShadow: "0px 0px 20px 0px rgba(0,0,0,0.2)",
@@ -14,7 +13,7 @@ export const itemStyles = {
 
 export const featureStyles = {
   sectionWrapper: {
-    py: 30,
+    py: 6,
     width: "100%",
     display: "flex",
     overflow: "hidden",

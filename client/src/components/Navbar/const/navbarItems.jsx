@@ -2,18 +2,23 @@ export const navbarItems = [
   {
     id: 0,
     label: "Home",
-    route: "/",
+    route: "#home",
   },
   {
     id: 1,
-    label: "About Us",
-    route: "/about",
+    label: "Services",
+    route: "#services",
   },
   {
     id: 2,
     label: "Portfolio",
     route: "#portfolio",
   },
+  {
+    id: 3,
+    label: "Contact Us",
+    route: "#contact"
+  }
   // {
   //   id: 2,
   //   label: "Login",

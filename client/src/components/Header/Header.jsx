@@ -1,10 +1,11 @@
 import React from "react";
 import { Box, Container, Typography, Button } from "@mui/material";
-import { headerStyles, content } from "./header.styles";
+import { headerStyles } from "./header.styles";
+import { content } from "./const/headerItems";
 
 const Header = () => {
   return (
-    <Container sx={headerStyles.backgroundWrapper}>
+    <Container id="home" sx={headerStyles.backgroundWrapper}>
       <Box textAlign="center" color="common.white" sx={headerStyles.wrapper}>
         <Typography
           justifyContent={"center"}
@@ -12,19 +13,12 @@ const Header = () => {
           component="h2"
           gutterBottom={true}
         >
-          <Typography sx={headerStyles.icon} variant="h1" component="span">
-            {content['headerIcon']}
-          </Typography>
           <Typography sx={headerStyles.title} variant="h2" component="span">
             {content["title"]}{" "}
           </Typography>
         </Typography>
         <Container maxWidth="sm">
-          <Typography
-            variant="subtitle1"
-            color="white"
-            paragraph={true}
-          >
+          <Typography sx={{my: 8}} variant="subtitle1" color="white" paragraph={true}>
             {content["description"]}
           </Typography>
         </Container>
@@ -37,7 +31,12 @@ const Header = () => {
           >
             {content["primary-action"]}
           </Button>
-          <Button href="#contact" variant="outlined" color="secondary" sx={headerStyles.button}>
+          <Button
+            href="#contact"
+            variant="outlined"
+            color="secondary"
+            sx={headerStyles.button}
+          >
             {content["secondary-action"]}
           </Button>
         </Box>

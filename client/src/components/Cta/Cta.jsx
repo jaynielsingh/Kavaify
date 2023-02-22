@@ -2,17 +2,19 @@ import {
   Button,
   Card,
   CardContent,
+  Container,
   Grid,
   Paper,
   Typography,
+  Box,
+  Stack
 } from "@mui/material";
-import { Box, Stack } from "@mui/system";
 import React from "react";
 
 const Cta = () => {
   return (
-    <div>
-      <Grid container component="main" sx={{ height: "100vh" }}>
+    <Container maxWidth='xl'>
+      <Grid container component="main" sx={{ height: "100vh", mx: 4 }}>
         <Grid
           item
           xs={false}
@@ -65,7 +67,7 @@ const Cta = () => {
           </Box>
         </Grid>
       </Grid>
-    </div>
+    </Container>
   );
 };
 

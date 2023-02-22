@@ -43,6 +43,7 @@ const Contact = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          my: 20
         }}
       >
         <Typography component="h1" variant="h4" sx={{ mb: 4 }}>
