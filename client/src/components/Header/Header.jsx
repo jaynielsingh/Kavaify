@@ -24,17 +24,15 @@ const Header = () => {
         </Container>
         <Box mt={3}>
           <Button
-            href="#cta"
+            href="#features"
             variant="contained"
-            color="secondary"
             sx={headerStyles.button}
           >
             {content["primary-action"]}
           </Button>
           <Button
             href="#contact"
-            variant="outlined"
-
+            variant="contained"
             sx={headerStyles.button}
           >
             {content["secondary-action"]}

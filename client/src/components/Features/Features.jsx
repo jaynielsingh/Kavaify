@@ -8,7 +8,7 @@ import { featureItems } from "./const/featureItems";
 const Features = () =>
 {
   return (
-    <Box component="section" sx={featureStyles.sectionWrapper}>
+    <Box id="features" component="section" sx={featureStyles.sectionWrapper}>
       <Container>
         <Typography sx={{ fontFamily: "Wallpoet", my: 20, color: 'whitesmoke' }} variant="h1" align="center">Why Kavaify?</Typography>
         <Container sx={featureStyles.containerWrapper}>

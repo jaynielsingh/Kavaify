@@ -101,7 +101,7 @@ const Contact = () =>
           fullWidth
           type="submit"
           variant="contained"
-          sx={{ mt: 5, mb: 5, p: 2, backgroundColor: "#FCB287", color: "black" }}
+          sx={{ mt: 5, mb: 5, p: 2, backgroundColor: "#FCB287", color: "black", ":hover": { color: 'white' } }}
         >
           Send Message
         </Button>

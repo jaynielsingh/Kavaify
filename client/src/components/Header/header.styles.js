@@ -7,7 +7,7 @@ export const headerStyles = {
   },
 
   backgroundWrapper: {
-    
+
     minWidth: "100vw",
     height: "100vh",
     backgroundSize: "cover",
@@ -24,9 +24,14 @@ export const headerStyles = {
   },
 
   button: {
-    backgroundColor:  "#FCB287"  ,
+    backgroundColor: "#FCB287",
     padding: "5px 20px",
     margin: "10px",
-  },
-};
+    color: 'black',
+    "&:hover": {
+      color: "white"
+    }
+  }
+}
+
 
