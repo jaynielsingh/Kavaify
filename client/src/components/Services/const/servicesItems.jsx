@@ -2,14 +2,14 @@ import GridViewIcon from "@mui/icons-material/GridView";
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 import HandymanIcon from "@mui/icons-material/Handyman";
 import EmailIcon from "@mui/icons-material/Email";
-import StorageIcon from '@mui/icons-material/Storage';
-import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import StorageIcon from "@mui/icons-material/Storage";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import React from "react";
 
 const classes = {
   icon: {
     fontSize: 30,
-    color: "#ff3366",
+    color: "#198995",
     py: 5,
   },
 };
@@ -30,30 +30,29 @@ export const services = [
   },
   {
     id: 2,
-    title: "Website Maintenances",
+    title: "Maintenances",
     icon: <HandymanIcon sx={classes.icon} />,
-    content:
-      "Your website will be up to date as code tend to go out of date.",
+    content: "Website maintenance to ensure your site is working and to ensure there is no downtime.",
   },
   {
     id: 3,
     title: "Domain & Email Setup",
     icon: <EmailIcon sx={classes.icon} />,
     content:
-      "Your very own email address to give your business a more look professional. {name@yourcompany.com}",
+      "Email address to give your business a more look professional. {name@yourcompany.com}",
   },
   {
     id: 4,
-    title: "Customer Support",
+    title: "Logo Design",
     icon: <SupportAgentIcon sx={classes.icon} />,
     content:
-    "We offer excellent customer support to help when needed."
+      "Create an amazing logo for your business and really make you stand out from the crowd.",
   },
   {
     id: 5,
-    title: "Website Hosting",
-    icon: <StorageIcon sx={classes.icon}/>,
+    title: "Hosting",
+    icon: <StorageIcon sx={classes.icon} />,
     content:
-    "We will take care of complicated hosting process, while you stay focus business."
-  }
+      "Take care of complicated hosting process, while you stay focused on your business.",
+  },
 ];

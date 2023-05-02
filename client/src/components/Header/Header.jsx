@@ -18,7 +18,7 @@ const Header = () => {
           </Typography>
         </Typography>
         <Container maxWidth="sm">
-          <Typography sx={{my: 8}} variant="subtitle1" color="white" paragraph={true}>
+          <Typography sx={{my: 8}} variant="h6" color="black" paragraph={true}>
             {content["description"]}
           </Typography>
         </Container>
@@ -34,7 +34,7 @@ const Header = () => {
           <Button
             href="#contact"
             variant="outlined"
-            color="secondary"
+
             sx={headerStyles.button}
           >
             {content["secondary-action"]}

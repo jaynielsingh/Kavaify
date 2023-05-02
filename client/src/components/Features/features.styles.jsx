@@ -10,7 +10,12 @@ export const featureStyles = {
     width: "100%",
     display: "flex",
     overflow: "hidden",
-    bgcolor: "secondary.light",
+    // backgroundColor: '#116175',
+    backgroundColor: "#0D495D",
+    backgroundImage: "url('https://www.transparenttextures.com/patterns/black-felt.png')",
+    color: 'white',
+
+
   },
 
   containerWrapper: {
@@ -28,5 +33,6 @@ export const featureStyles = {
 
   titleWrapper: {
     my: 5,
+    color: 'white',
   },
 };

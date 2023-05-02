@@ -1,7 +1,7 @@
 export const images = [
   {
     url: "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=400",
-    title: "Person Portfolio",
+    title: "Portfolio Website",
     width: "40%",
 
     link: "http://www.jayniel.com",

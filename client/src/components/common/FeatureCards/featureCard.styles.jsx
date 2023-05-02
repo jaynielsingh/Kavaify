@@ -9,6 +9,8 @@ export const itemStyles = {
     transform: "scale(1.05)",
   },
   transition: "0.3s",
+
+
 };
 
 export const featureStyles = {

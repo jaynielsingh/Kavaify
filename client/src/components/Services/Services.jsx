@@ -1,14 +1,14 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-
 import React from "react";
 import { services } from "./const/servicesItems";
 import { featureStyles } from "./services.styles";
 import FeatureCard from "../common/FeatureCards/FeatureCard";
 
-const Services = () => {
+const Services = () =>
+{
   return (
     <Box id="services" component="section">
-      <Typography variant="h2" align="center" sx={{ mt: 20 }}>
+      <Typography variant="h1" align="center" sx={{ fontFamily: "Wallpoet", mt: 20 }}>
         What We Offer
       </Typography>
       <Box sx={featureStyles.sectionWrapper}>
@@ -28,31 +28,30 @@ const Services = () => {
         </Container>
       </Box>
     </Box>
-
-    // <>
-    //   <Box component="section" sx={featureStyles.sectionWrapper}>
-    //     <Container>
-    //       <Grid container spacing={3}>
-    //         {services.map((service) => (
-    //           <Grid item xs={12} md={4} sm={false} key={service.id}>
-    //             <Card sx={itemStyles}>
-    //               <CardContent>
-    //                 {service.icon}
-    //                 <Typography variant="h5" gutterBottom>
-    //                   {service.title}
-    //                 </Typography>
-    //                 <Typography variant="body1">
-    //                   {service.description}
-    //                 </Typography>
-    //               </CardContent>
-    //             </Card>
-    //           </Grid>
-    //         ))}
-    //       </Grid>
-    //     </Container>
-    //   </Box>
-    // </>
   );
 };
+// <>
+//   <Box component="section" sx={featureStyles.sectionWrapper}>
+//     <Container>
+//       <Grid container spacing={3}>
+//         {services.map((service) => (
+//           <Grid item xs={12} md={4} sm={false} key={service.id}>
+//             <Card sx={itemStyles}>
+//               <CardContent>
+//                 {service.icon}
+//                 <Typography variant="h5" gutterBottom>
+//                   {service.title}
+//                 </Typography>
+//                 <Typography variant="body1">
+//                   {service.description}
+//                 </Typography>
+//               </CardContent>
+//             </Card>
+//           </Grid>
+//         ))}
+//       </Grid>
+//     </Container>
+//   </Box>
+// </>
 
 export default Services;

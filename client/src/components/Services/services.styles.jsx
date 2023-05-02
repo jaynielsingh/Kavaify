@@ -17,7 +17,10 @@ export const featureStyles = {
     width: "100%",
     display: "flex",
     overflow: "hidden",
-    bgColor: "secondary.light",
+
+    // backgroundImage: 'url("https://www.transparenttextures.com/patterns/60-lines.png")',
+
+
   },
 
   containerWrapper: {
@@ -27,11 +30,6 @@ export const featureStyles = {
     position: "relative",
   },
 
-  backgroundWrapper: {
-    pointerEvents: "none",
-    position: "absolute",
-    top: -70,
-  },
 
   titleWrapper: {
     my: 5,
