@@ -14,19 +14,22 @@ import { navbarItems } from "./const/navbarItems";
 import Logo from "../../assets/images/Kavaify-logo.svg";
 // import { Link } from "react-router-dom";
 
-export default function NavBar() {
+export default function NavBar()
+{
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
+  const handleOpenNavMenu = (event) =>
+  {
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = () =>
+  {
     setAnchorElNav(null);
   };
 
   return (
-    <AppBar position="fixed" sx={{ color: "white"}} >
+    <AppBar position="fixed" sx={{ color: "white", backgroundColor: "black" }} >
       <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <Typography
