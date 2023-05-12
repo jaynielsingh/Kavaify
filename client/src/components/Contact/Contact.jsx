@@ -2,7 +2,7 @@ import { Box, Button, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import axios from "axios";
-import ContactImage from "../../assets/images/contact-bg-1.jpg";
+
 
 const Contact = () =>
 {
