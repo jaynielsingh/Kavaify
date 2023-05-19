@@ -9,8 +9,8 @@ import { ImageBackdrop, ImageIconButton } from "./projects.styles";
 export default function Projects()
 {
   return (
-    <Container id='portfolio' component="section" sx={{ mt: "100px", mb: 4 }}>
-      <Typography variant="h2" marked="center" align="center" sx={{fontFamily: "Wallpoet"}} component="h2">
+    <Container id='portfolio' component="section" sx={{ backgroundColor: "black", width: "100%", }}>
+      <Typography variant="h2" marked="center" align="center" sx={{ fontFamily: "Wallpoet" }} component="h2">
         Recent Projects
       </Typography>
       <Box sx={{ mt: "100px", mb: "200px", display: "flex", flexWrap: "wrap" }}>

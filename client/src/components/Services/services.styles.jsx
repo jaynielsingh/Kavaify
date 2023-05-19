@@ -12,26 +12,39 @@ export const itemStyles = {
 };
 
 export const featureStyles = {
+  // sectionWrapper: {
+  //   py: 6,
+  //   width: "100%",
+  //   display: "flex",
+  //   overflow: "hidden",
+
+  //   // backgroundImage: 'url("https://www.transparenttextures.com/patterns/60-lines.png")',
+
+
+  // },
   sectionWrapper: {
-    py: 6,
     width: "100%",
     display: "flex",
     overflow: "hidden",
-
-    // backgroundImage: 'url("https://www.transparenttextures.com/patterns/60-lines.png")',
+    backgroundColor: 'black',
+    // backgroundColor: "#0D495D",
+    // backgroundImage: "url('https://www.transparenttextures.com/patterns/connected.png')",
+    color: 'white'
+ 
 
 
   },
-
   containerWrapper: {
     mt: 15,
     mb: 30,
     display: "flex",
     position: "relative",
+    color: 'white'
   },
 
 
   titleWrapper: {
     my: 5,
+    color: 'white',
   },
 };

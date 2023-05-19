@@ -19,7 +19,6 @@ function App()
       <Features />
       <Services />
 
-      <Projects />
       <Contact />
       <Footer />
     </>

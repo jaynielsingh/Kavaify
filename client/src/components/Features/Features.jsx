@@ -10,7 +10,7 @@ const Features = () =>
   return (
     <Box id="features" component="section" sx={featureStyles.sectionWrapper}>
       <Container>
-        <Typography sx={{ fontFamily: "Wallpoet", my: 20, color: 'whitesmoke' }} variant="h1" align="center">Why Kavaify?</Typography>
+        <Typography sx={featureStyles.titleStyle} variant="h1" align="center">Why Kavaify?</Typography>
         <Container sx={featureStyles.containerWrapper}>
           <Box
             sx={featureStyles.backgroundWrapper}
@@ -19,7 +19,7 @@ const Features = () =>
             {featureItems.map((item) => (
               <Grid item xs={12} md={4} id={item.id} key={item.id}>
                 <Box sx={itemStyles}>
-                  <Avatar sizes="" sx={{ bgcolor: "black", color: "#FCB287", width: 55, height: 55 }}>{item.icon}</Avatar>
+                  <Avatar sizes="" sx={{bgcolor: "black", color: "#FCB287", width: 55, height: 55 }}>{item.icon}</Avatar>
                   <Typography variant="h6" sx={featureStyles.titleWrapper}>
                     {item.title}
                   </Typography>

@@ -7,26 +7,28 @@ import FeatureCard from "../common/FeatureCards/FeatureCard";
 const Services = () =>
 {
   return (
-    <Box id="services" component="section">
-      <Typography variant="h1" align="center" sx={{ fontFamily: "Wallpoet", mt: 20 }}>
-        What We Offer
-      </Typography>
-      <Box sx={featureStyles.sectionWrapper}>
-        <Container sx={featureStyles.containerWrapper}>
-          <Grid container spacing={5}>
-            {services.map((service) => (
-              <Grid key={service.id} item xs={12} md={4}>
-                <FeatureCard
-                  id={service.id}
-                  icon={service.icon}
-                  title={service.title}
-                  content={service.content}
-                />
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </Box>
+    <Box id="services" component="section" sx={featureStyles.sectionWrapper}>
+      <Container>
+        <Typography variant="h1" align="center" sx={{ fontFamily: "Wallpoet", mt: 20, color: 'whitesmoke' }}>
+          What We Offer
+        </Typography>
+        <Box >
+          <Container sx={featureStyles.containerWrapper}>
+            <Grid container spacing={5}>
+              {services.map((service) => (
+                <Grid key={service.id} item xs={12} md={4}>
+                  <FeatureCard
+                    id={service.id}
+                    icon={service.icon}
+                    title={service.title}
+                    content={service.content}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
+        </Box>
+      </Container>
     </Box>
   );
 };

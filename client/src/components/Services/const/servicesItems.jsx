@@ -9,7 +9,7 @@ import React from "react";
 const classes = {
   icon: {
     fontSize: 30,
-    color: "#198995",
+    color: "#FCB287",
     py: 5,
   },
 };

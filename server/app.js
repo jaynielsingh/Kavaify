@@ -21,8 +21,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "client/build")));
 
 app.use("/", indexRouter);
-app.use("/", usersRouter);
-app.use("/", testRouter);
-app.use("/", contactRouter);
+app.use("/contact", contactRouter);
 
 module.exports = app;
