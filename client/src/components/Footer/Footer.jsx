@@ -4,9 +4,10 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 
-function Copyright() {
+function Copyright()
+{
   return (
-    <Typography variant="body2" color="text.secondary">
+    <Typography variant="body2" color="black">
       {"Copyright © "}
       <Link color="inherit" href="/">
         Kavaify
@@ -17,7 +18,8 @@ function Copyright() {
   );
 }
 
-export default function Footer() {
+export default function Footer()
+{
   return (
     <Box
       component="footer"
@@ -25,10 +27,7 @@ export default function Footer() {
         py: 2,
         px: 2,
         mt: "auto",
-        backgroundColor: (theme) =>
-          theme.palette.mode === "light"
-            ? theme.palette.grey[200]
-            : theme.palette.grey[800],
+        bgcolor: "#50c787"
       }}
     >
       <Box
@@ -36,6 +35,7 @@ export default function Footer() {
           display: "flex",
           justifyContent: "center",
           alignContent: "center",
+          color: "#50c787",
         }}
       >
         <Copyright />

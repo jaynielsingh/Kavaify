@@ -18,7 +18,7 @@ const Header = () => {
           </Typography>
         </Typography>
         <Container maxWidth="sm">
-          <Typography sx={{my: 8}} variant="h6" color="black" paragraph={true}>
+          <Typography sx={headerStyles.content} variant="h6" color="black" paragraph={true}>
             {content["description"]}
           </Typography>
         </Container>

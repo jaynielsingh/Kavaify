@@ -1,4 +1,4 @@
-import HeroImage from "../../assets/images/hero-bg-3.jpg";
+import HeroImage from "../../assets/images/hero-bg-4.jpg";
 
 export const headerStyles = {
   wrapper: {
@@ -19,12 +19,19 @@ export const headerStyles = {
   title: {
     fontFamily: 'Monoton',
     fontSize: "120px",
-    color: "black",
+    color: "#dadff7",
     paddingBottom: "50%",
+
+  },
+
+  content: {
+    my: 8,
+    color: "#dadff7",
+    pt: "70px",
   },
 
   button: {
-    backgroundColor: "#FCB287",
+    backgroundColor: "#50c878",
     padding: "5px 20px",
     margin: "10px",
     color: 'black',

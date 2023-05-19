@@ -4,7 +4,6 @@ import Features from "./components/Features/Features";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
-import Projects from "./components/Projects/Projects";
 import Services from "./components/Services/Services";
 import "./index.css";
 
@@ -18,7 +17,6 @@ function App()
       <Header />
       <Features />
       <Services />
-
       <Contact />
       <Footer />
     </>

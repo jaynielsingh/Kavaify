@@ -27,19 +27,26 @@ export const featureStyles = {
     mb: 30,
     display: "flex",
     position: "relative",
-    color: "white",
+    color: "#dadff7",
 
   },
 
   titleStyle: {
     fontFamily: "Wallpoet",
     my: 20,
-    color: 'white',
+    color: '#50c878',
   },
 
 
   titleWrapper: {
     my: 5,
-    color: 'white',
+    color: "white",
   },
+
+  icon: {
+    bgcolor: "black",
+    color: "#50c878",
+    width: 55,
+    height: 55
+  }
 };

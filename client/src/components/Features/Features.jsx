@@ -19,7 +19,7 @@ const Features = () =>
             {featureItems.map((item) => (
               <Grid item xs={12} md={4} id={item.id} key={item.id}>
                 <Box sx={itemStyles}>
-                  <Avatar sizes="" sx={{bgcolor: "black", color: "#FCB287", width: 55, height: 55 }}>{item.icon}</Avatar>
+                  <Avatar sizes="" sx={featureStyles.icon}>{item.icon}</Avatar>
                   <Typography variant="h6" sx={featureStyles.titleWrapper}>
                     {item.title}
                   </Typography>

@@ -44,10 +44,13 @@ const Contact = () =>
     <Box
       id="contact"
       sx={{
+        bgcolor:  "#50c787",
+        width: "100%",
         display: "flex",
+        overflow: "hidden",
         flexDirection: "column",
         alignItems: "center",
-        my: 30,
+
         // backgroundImage: `url(${ContactImage})`,
         // backgroundSize: 'cover',
         // backgroundRepeat: "no-repeat",
@@ -55,7 +58,7 @@ const Contact = () =>
         // height: "100vh",
       }}
     >
-      <Typography component="h1" variant="h1" sx={{ my: 5, fontFamily: "Wallpoet" }}>
+      <Typography component="h1" variant="h1" sx={{ my: 20, fontFamily: "Wallpoet", color: "black" }}>
         Contact Us
       </Typography>
       <ContactsIcon />
@@ -101,7 +104,7 @@ const Contact = () =>
           fullWidth
           type="submit"
           variant="contained"
-          sx={{ mt: 5, mb: 5, p: 2, backgroundColor: "#FCB287", color: "black", ":hover": { color: 'white' } }}
+          sx={{ mt: 5, mb: 5, p: 2, backgroundColor: "black", color: "white" }}
         >
           Send Message
         </Button>

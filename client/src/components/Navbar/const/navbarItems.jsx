@@ -9,13 +9,13 @@ export const navbarItems = [
     label: "Services",
     route: "#services",
   },
+  // {
+  //   id: 2,
+  //   label: "Portfolio",
+  //   route: "#portfolio",
+  // },
   {
     id: 2,
-    label: "Portfolio",
-    route: "#portfolio",
-  },
-  {
-    id: 3,
     label: "Contact Us",
     route: "#contact"
   }

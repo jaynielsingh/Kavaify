@@ -29,7 +29,7 @@ export const featureStyles = {
     backgroundColor: 'black',
     // backgroundColor: "#0D495D",
     // backgroundImage: "url('https://www.transparenttextures.com/patterns/connected.png')",
-    color: 'white'
+
  
 
 
@@ -45,6 +45,6 @@ export const featureStyles = {
 
   titleWrapper: {
     my: 5,
-    color: 'white',
+    color: '#50c787',
   },
 };

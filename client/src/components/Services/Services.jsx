@@ -9,7 +9,7 @@ const Services = () =>
   return (
     <Box id="services" component="section" sx={featureStyles.sectionWrapper}>
       <Container>
-        <Typography variant="h1" align="center" sx={{ fontFamily: "Wallpoet", mt: 20, color: 'whitesmoke' }}>
+        <Typography variant="h1" align="center" sx={{ fontFamily: "Wallpoet", my: 20, color: '#50c787' }}>
           What We Offer
         </Typography>
         <Box >
