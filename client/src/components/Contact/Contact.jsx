@@ -28,7 +28,7 @@ const Contact = () =>
   const handleSubmit = async (event) =>
   {
     try {
-      const response = await axios.post("http://localhost:9000/contact", {
+      const response = await axios.post("http://localhost:3001/contact", {
         name: formData.name,
         email: formData.email,
         message: formData.message,
@@ -44,7 +44,7 @@ const Contact = () =>
     <Box
       id="contact"
       sx={{
-        bgcolor:  "#50c787",
+        bgcolor: "#50c787",
         width: "100%",
         display: "flex",
         overflow: "hidden",
