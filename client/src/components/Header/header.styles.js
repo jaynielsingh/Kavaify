@@ -13,6 +13,7 @@ export const headerStyles = {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundImage: `url(${HeroImage})`,
+    justifyContent: 'center'
 
   },
 
@@ -21,6 +22,7 @@ export const headerStyles = {
     fontSize: "120px",
     color: "#dadff7",
     paddingBottom: "50%",
+    
 
   },
 

@@ -29,7 +29,7 @@ export default function NavBar()
   };
 
   return (
-    <AppBar position="fixed" sx={{ color: "white", backgroundColor: "black" }} >
+    <AppBar position="static" sx={{ color: "white", backgroundColor: "black" }} >
       <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <Typography
@@ -91,9 +91,6 @@ export default function NavBar()
               ))}
             </Menu>
           </Box>
-          <IntegrationInstructionsIcon
-            sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
-          />
           <Typography
             variant="h5"
             noWrap

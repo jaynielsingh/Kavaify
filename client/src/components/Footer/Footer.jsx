@@ -7,13 +7,12 @@ import Link from "@mui/material/Link";
 function Copyright()
 {
   return (
-    <Typography variant="body2" color="black">
+    <Typography variant="body2" color="white">
       {"Copyright © "}
       <Link color="inherit" href="/">
         Kavaify
       </Link>{" "}
       {new Date().getFullYear()}
-      {"."}
     </Typography>
   );
 }
@@ -26,8 +25,8 @@ export default function Footer()
       sx={{
         py: 2,
         px: 2,
-        mt: "auto",
-        bgcolor: "#50c787"
+        position: 'relative',
+        backgroundColor: 'primary.dark',
       }}
     >
       <Box
@@ -35,7 +34,6 @@ export default function Footer()
           display: "flex",
           justifyContent: "center",
           alignContent: "center",
-          color: "#50c787",
         }}
       >
         <Copyright />

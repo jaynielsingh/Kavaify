@@ -9,14 +9,16 @@ const Services = () =>
   return (
     <Box id="services" component="section" sx={featureStyles.sectionWrapper}>
       <Container>
-        <Typography variant="h1" align="center" sx={{ fontFamily: "Wallpoet", my: 20, color: '#50c787' }}>
+        <Typography variant="h1" align="center" sx={{ fontFamily: "Wallpoet", my: 20, color: 'white' }}>
           What We Offer
         </Typography>
         <Box >
-          <Container sx={featureStyles.containerWrapper}>
+          <Container maxWidth='lg' sx={featureStyles.containerWrapper}>
             <Grid container spacing={5}>
               {services.map((service) => (
-                <Grid key={service.id} item xs={12} md={4}>
+                <Grid sx={{
+                  py: 6
+                }} key={service.id} item  sm={12} lg={4} md={6}>
                   <FeatureCard
                     id={service.id}
                     icon={service.icon}

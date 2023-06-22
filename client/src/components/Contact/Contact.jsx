@@ -1,7 +1,8 @@
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Box, Button, Container, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import axios from "axios";
+import ContactImage from "../../assets/images/hero-bg-3.jpg"
 
 
 const Contact = () =>
@@ -44,29 +45,30 @@ const Contact = () =>
     <Box
       id="contact"
       sx={{
-        bgcolor: "#50c787",
         width: "100%",
         display: "flex",
-        overflow: "hidden",
         flexDirection: "column",
         alignItems: "center",
+        position: 'relative',
 
-        // backgroundImage: `url(${ContactImage})`,
-        // backgroundSize: 'cover',
-        // backgroundRepeat: "no-repeat",
+        backgroundImage: `url(${ContactImage})`,
+        backgroundSize: 'auto',
+        backgroundRepeat: "no-repeat",
+        opacity: 0.9,
 
         // height: "100vh",
       }}
     >
-      <Typography component="h1" variant="h1" sx={{ my: 20, fontFamily: "Wallpoet", color: "black" }}>
+      <Typography component="h1" variant="h1" sx={{ mt: 20, mb: 10, fontFamily: "Wallpoet", color: "black" }}>
         Contact Us
       </Typography>
       <ContactsIcon />
+
       <Box
         component="form"
         onChange={handleChange}
         onSubmit={handleSubmit}
-        sx={{ mt: 6, mb: 10 }}
+        sx={{ color: 'black',  mt: 6, mb: 10 }}
       >
         <TextField
           required
@@ -75,6 +77,7 @@ const Contact = () =>
           label="Name"
           value={formData.name}
           margin="normal"
+          variant="filled"
           fullWidth
           autoComplete="name"
         />
@@ -88,6 +91,7 @@ const Contact = () =>
           type="email"
           fullWidth
           autoComplete="email"
+          variant="filled"
         />
         <TextField
           required
@@ -98,6 +102,7 @@ const Contact = () =>
           margin="normal"
           fullWidth
           multiline
+          variant="filled"
           rows={5}
         />
         <Button

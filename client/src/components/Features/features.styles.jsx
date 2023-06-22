@@ -13,7 +13,7 @@ export const featureStyles = {
     width: "100%",
     display: "flex",
     overflow: "hidden",
-    backgroundColor: 'black',
+    backgroundColor: 'primary.dark',
     // backgroundColor: '#116175',
     // backgroundColor: "#0D495D",
     backgroundImage: "url('https://www.transparenttextures.com/patterns/ag-square.png')",
@@ -33,8 +33,8 @@ export const featureStyles = {
 
   titleStyle: {
     fontFamily: "Wallpoet",
-    my: 20,
-    color: '#50c878',
+    mt: 20,
+    color: 'white',
   },
 
 

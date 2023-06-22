@@ -4,12 +4,12 @@ const express = require("express");
 var router = express.Router();
 const nodemailer = require("nodemailer");
 
-router.get("/contact", async (req, res, next) =>
+router.get("/", async (req, res, next) =>
 {
   res.send("This is the contact route ");
 });
 
-router.post("/contact", async (req, res, next) =>
+router.post("/", async (req, res, next) =>
 {
   const { name, email, message } = req.body;
   console.log(req.body);
@@ -44,6 +44,7 @@ router.post("/contact", async (req, res, next) =>
 
 
   // res.json(message);
+  res.redirect('/')
 });
 
 module.exports = router;

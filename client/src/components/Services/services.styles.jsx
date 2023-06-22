@@ -1,5 +1,5 @@
 export const itemStyles = {
-  display: "flex",
+
   flexDirection: "column",
   alignItems: "center",
   px: 5,
@@ -26,7 +26,8 @@ export const featureStyles = {
     width: "100%",
     display: "flex",
     overflow: "hidden",
-    backgroundColor: 'black',
+    position: 'static',
+    backgroundColor: 'primary.dark',
     // backgroundColor: "#0D495D",
     // backgroundImage: "url('https://www.transparenttextures.com/patterns/connected.png')",
 
