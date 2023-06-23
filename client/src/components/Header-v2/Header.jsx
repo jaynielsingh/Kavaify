@@ -1,5 +1,5 @@
 /* eslint-disable no-lone-blocks */
-import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import { Box, Button, Container, Stack, Typography } from '@mui/material';
 import React from 'react';
 import BackgroundImage from "../../assets/images/hero-bg-1.jpg";
 
@@ -13,7 +13,7 @@ const Header = () =>
         position: 'relative',
         overflow: 'hidden',
         minHeight: '100vh',
-        background: 'linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5)',
+        background: 'linear-gradient(-45deg, #ee7752,  #ff3564,#38761d, #23a6d5)',
       }}
     >
       <Box
@@ -43,28 +43,47 @@ const Header = () =>
       >
 
         <Container maxWidth="sm">
-          <Box sx={{
-            mt: "30%",
-            padding: 5,
-            boxShadow: "0px 0px 20px 0px rgba(444,555,0.2)",
-          }
-          }>
-            <Typography variant='h2' component='h1' align='center' color='white' gutterBottom>
-              Kavaify
+          <Box data-aos="zoom-in"
+            data-aos-delay="500"
+
+            data-aos-easing="ease-in-sine"
+            sx={{
+              mt: "45%",
+              padding: 5,
+              boxShadow: "0px 0px 20px 0px rgba(77,675,566,0.5)",
+
+
+            }
+            }>
+            <Box
+              data-aos='fade-zoom-in'
+              data-aos-easing="ease-in-back"
+              data-aos-delay="1500">
+              <Typography
+                sx={{ py: 5, fontFamily: 'Monoton', }} variant='h2' component='h1' align='center' color='white' gutterBottom>
+                Kavaify
+              </Typography>
+
+            </Box>
+            <Typography sx={{}} variant='h5' fontSize={25} component='h2' align='center' color='white' paragraph>
+              Design. Develop. Dominate
+              {/* "Elevate, Innovate, Dominate: Small Business Edition" */}
+              {/* Where Creativity Meets Functionality: Web Design at Its <span style={{position: 'inherit'}}> Finest</span> */}
             </Typography>
-            <Typography variant='h5' fontSize={20} component='h2' align='center' color='white' paragraph>
-              Where Creativity Meets Functionality: Web Design at Its Finest
-            </Typography>
+            <Stack direction='row' justifyContent='center' spacing={3} sx={{
+              pt: 5
+            }}>
+              <Button data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="800"
+                data-aos-offset="0" variant='contained' href='#about'>Learn More</Button>
+              <Button href='#contact' data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="900"
+                data-aos-offset="0" variant='contained'>Contact Us</Button>
+            </Stack>
           </Box>
         </Container>
-        <Box sx={{
-          justifyContent: 'center',
-          alignContent: 'center',
-          pl: 20,
-          pt: 15,
-        }}>
-          <Button color='success' variant='outlined'>Learn more</Button>
-        </Box>
 
       </Container>
     </Box>

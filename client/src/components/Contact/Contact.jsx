@@ -1,8 +1,7 @@
 import { Box, Button, Container, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
-import ContactsIcon from "@mui/icons-material/Contacts";
 import axios from "axios";
-import ContactImage from "../../assets/images/hero-bg-3.jpg"
+import ContactImage from "../../assets/images/hero-bg-3.jpg";
 
 
 const Contact = () =>
@@ -50,70 +49,72 @@ const Contact = () =>
         flexDirection: "column",
         alignItems: "center",
         position: 'relative',
-
         backgroundImage: `url(${ContactImage})`,
-        backgroundSize: 'auto',
         backgroundRepeat: "no-repeat",
-        opacity: 0.9,
+        opacity: 0.98
 
         // height: "100vh",
       }}
     >
-      <Typography component="h1" variant="h1" sx={{ mt: 20, mb: 10, fontFamily: "Wallpoet", color: "black" }}>
-        Contact Us
-      </Typography>
-      <ContactsIcon />
+      <Container>
+        <Typography align="center" component="h2" variant="h2" sx={{ mt: 20, mb: 6, fontFamily: "Wallpoet", color: "black" }}>
+          Contact Us
+        </Typography>
+        <Typography variant="h5" paragraph align="center">Let Us Bring Your Business Online</Typography>
 
-      <Box
-        component="form"
-        onChange={handleChange}
-        onSubmit={handleSubmit}
-        sx={{ color: 'black',  mt: 6, mb: 10 }}
-      >
-        <TextField
-          required
-          name="name"
-          id="name"
-          label="Name"
-          value={formData.name}
-          margin="normal"
-          variant="filled"
-          fullWidth
-          autoComplete="name"
-        />
-        <TextField
-          required
-          name="email"
-          value={formData.email}
-          id="email"
-          label="Email"
-          margin="normal"
-          type="email"
-          fullWidth
-          autoComplete="email"
-          variant="filled"
-        />
-        <TextField
-          required
-          name="message"
-          value={formData.message}
-          id="message"
-          label="Enter Your Message"
-          margin="normal"
-          fullWidth
-          multiline
-          variant="filled"
-          rows={5}
-        />
-        <Button
-          fullWidth
-          type="submit"
-          variant="contained"
-          sx={{ mt: 5, mb: 5, p: 2, backgroundColor: "black", color: "white" }}
+        <Box
+          component="form"
+          onChange={handleChange}
+          onSubmit={handleSubmit}
+          sx={{ color: 'black', px: 5, mt: 6, mb: 10 }}
         >
-          Send Message
-        </Button>
-      </Box>
+          <TextField
+            required
+            name="name"
+            id="name"
+            label="Name"
+            value={formData.name}
+            margin="normal"
+            variant="filled"
+            fullWidth
+            autoComplete="name"
+
+
+          />
+          <TextField
+            required
+            name="email"
+            value={formData.email}
+            id="email"
+            label="Email"
+            margin="normal"
+            type="email"
+            fullWidth
+            autoComplete="email"
+            variant="filled"
+          />
+          <TextField
+            required
+            name="message"
+            value={formData.message}
+            id="message"
+            label="Enter Your Message"
+            margin="normal"
+            fullWidth
+            multiline
+            variant="filled"
+            rows={5}
+          />
+          <Button
+            fullWidth
+            type="submit"
+            variant="contained"
+            sx={{ mt: 5, mb: 5, p: 2, backgroundColor: "black", color: "white" }}
+          >
+            Send Message
+          </Button>
+        </Box>
+      </Container>
     </Box>
   );
 };

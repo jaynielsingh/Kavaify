@@ -9,7 +9,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
 import { navbarItems } from "./const/navbarItems";
 import Logo from "../../assets/images/Kavaify-logo.svg";
 // import { Link } from "react-router-dom";
@@ -29,7 +28,7 @@ export default function NavBar()
   };
 
   return (
-    <AppBar position="static" sx={{ color: "white", backgroundColor: "black" }} >
+    <AppBar position="sticky" sx={{ zIndex:3, color: "white", backgroundColor: "black" }} >
       <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <Typography

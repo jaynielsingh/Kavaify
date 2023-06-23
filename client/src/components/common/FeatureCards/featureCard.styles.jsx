@@ -30,6 +30,10 @@ export const featureStyles = {
     color: 'white'
 
   },
+
+  contentWrapper: {
+    fontSize: '20px',
+  }
 };
 
 // @-webkit-keyframes glow {
