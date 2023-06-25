@@ -2,26 +2,34 @@ import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import DiscountIcon from "@mui/icons-material/Discount";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 
+const classes = {
+  icon: {
+    fontSize: 35,
+    color: "#07F8EC",
+    py: 4,
+  },
+};
+
 export const featureItems = [
   {
     id: 0,
-    title: "Unique and user-centered design approach",
+    title: "Results-Oriented Approach:",
     content:
-      "This differentiates your company from competitors and emphasizes your focus on delivering high-quality, visually appealing, and intuitive websites that meet your clients' specific needs and goals.",
-    icon: <DesignServicesIcon />,
+      " We deliver measurable results that drive business growth, ensuring a high return on investment for our clients.",
+    icon: <DesignServicesIcon sx={classes.icon} />,
   },
   {
     id: 1,
-    title: "Competitive pricing",
+    title: "All-in-One Digital Solutions",
     content:
-      "Offering competitive pricing, without sacrificing quality or customer service, can help attract cost-conscious clients who are looking for high-quality web development services at an affordable price. This can help increase the volume of business and ultimately drive revenue for your company.",
-    icon: <DiscountIcon />,
+      "Our comprehensive digital solutions encompass web design, branding, SEO, and more, providing clients with a one-stop-shop for their online success",
+    icon: <DiscountIcon sx={classes.icon} />,
   },
   {
     id: 2,
-    title: "Dedicated customer service",
+    title: "Reliability and Timely Delivery",
     content:
-      "Providing excellent customer service and ongoing support can help build trust and establish long-term relationships with your clients, ensuring their satisfaction with the final product and their confidence in their investment in your company.",
-    icon: <SupportAgentIcon />,
+      'We pride ourselves on delivering projects on time and within budget, maintaining clear communication channels with clients and providing a professional and dependable service.',
+    icon: <SupportAgentIcon sx={classes.icon} />,
   },
 ];

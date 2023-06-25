@@ -3,6 +3,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
+import BottomWaveDivider from "../common/bottomDivider/bottomDivider";
 
 function Copyright()
 {
@@ -25,8 +26,6 @@ export default function Footer()
       sx={{
         py: 2,
         px: 2,
-        position: 'relative',
-        backgroundColor: 'primary.dark',
       }}
     >
       <Box
@@ -34,9 +33,12 @@ export default function Footer()
           display: "flex",
           justifyContent: "center",
           alignContent: "center",
+          position: 'relative',
+          zIndex: 1
         }}
       >
         <Copyright />
+      <BottomWaveDivider />
       </Box>
     </Box>
   );

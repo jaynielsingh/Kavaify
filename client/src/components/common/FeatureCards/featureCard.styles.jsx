@@ -2,9 +2,10 @@ export const itemStyles = {
   py: 5,
   px: 5,
   display: "flex",
+  borderRadius: '25px',
   flexDirection: "column",
   alignItems: "center",
-  boxShadow: "0px 0px 20px 0px rgba(0,100,0,0.2)",
+  boxShadow: "0px 0px 20px 0px #07F8EC",
   "&:hover": {
     boxShadow: "0px 0px 20px 0px rgba(0,0,0,0.2)",
     transform: "scale(1.05)",
@@ -16,23 +17,25 @@ export const itemStyles = {
 
 export const featureStyles = {
 
-  // containerWrapper: {
+  containerWrapper: {
 
-  //   display: "flex",
-  //   position: "center",
-  // },
+    display: "flex",
+
+  },
 
 
 
   titleWrapper: {
     my: 5,
-    display: "center",
-    color: 'white'
+    color: 'white',
+    alignItems: 'center',
 
   },
 
   contentWrapper: {
-    fontSize: '20px',
+    my: 2,
+    py: 2,
+    alignItems: 'center',
   }
 };
 

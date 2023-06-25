@@ -9,8 +9,8 @@ import React from "react";
 const classes = {
   icon: {
     fontSize: 30,
-    color: "#50c787",
-    py: 5,
+    color: "#07F8EC",
+    py: 4,
   },
 };
 export const services = [

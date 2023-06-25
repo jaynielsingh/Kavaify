@@ -1,35 +1,37 @@
 /* eslint-disable no-lone-blocks */
 import { Box, Button, Container, Stack, Typography } from '@mui/material';
 import React from 'react';
-import BackgroundImage from "../../assets/images/hero-bg-1.jpg";
+import BackgroundImage from "../../assets/images/blurry-gradien-bg1.svg";
+import WaveDivider from '../common/waveDivider/waveDivider';
+
+
 
 
 const Header = () =>
 {
-
+  
   return (
     <Box
       sx={{
         position: 'relative',
         overflow: 'hidden',
         minHeight: '100vh',
-        background: 'linear-gradient(-45deg, #ee7752,  #ff3564,#38761d, #23a6d5)',
+        // background: 'linear-gradient(0.25turn, #ee7752,  #23a6d5)',
       }}
     >
       <Box
-        flex={1}
+
         sx={{
           position: "fixed",
           top: 0,
           left: 0,
-          width: '100vw',
-          height: '100vh',
+          width: '100%',
+          height: '100%',
           backgroundImage: `url(${BackgroundImage})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
-          opacity: 1.5,
-          mixBlendMode: 'multiply', // Adjust blend mode for desired effect
+          // mixBlendMode: 'multiply', // Adjust blend mode for desired effect
         }}
       ></Box>
       <Container
@@ -38,35 +40,35 @@ const Header = () =>
           position: 'relative',
           zIndex: 1,
           py: 8,
-          color: 'common.white',
+
         }}
       >
 
         <Container maxWidth="sm">
+          <Box
+            data-aos='fade-zoom-in'
+            data-aos-easing="ease-in-back"
+            data-aos-delay="1500">
+            <Typography
+              sx={{ pt: 30, fontFamily: 'Monoton', fontSize: '80px' }} variant='h1' component='h1' align='center' color='white' gutterBottom>
+              Kava<span style={{ color: '#07F8EC' }}>ify</span>
+            </Typography>
+
+          </Box>
           <Box data-aos="zoom-in"
             data-aos-delay="500"
 
             data-aos-easing="ease-in-sine"
             sx={{
-              mt: "45%",
+              mt: "25%",
               padding: 5,
-              boxShadow: "0px 0px 20px 0px rgba(77,675,566,0.5)",
-
+              boxShadow: "0px 0px 20px 2px #07F8EC",
 
             }
             }>
-            <Box
-              data-aos='fade-zoom-in'
-              data-aos-easing="ease-in-back"
-              data-aos-delay="1500">
-              <Typography
-                sx={{ py: 5, fontFamily: 'Monoton', }} variant='h2' component='h1' align='center' color='white' gutterBottom>
-                Kavaify
-              </Typography>
 
-            </Box>
             <Typography sx={{}} variant='h5' fontSize={25} component='h2' align='center' color='white' paragraph>
-              Design. Develop. Dominate
+              Design | Develop | Dominate
               {/* "Elevate, Innovate, Dominate: Small Business Edition" */}
               {/* Where Creativity Meets Functionality: Web Design at Its <span style={{position: 'inherit'}}> Finest</span> */}
             </Typography>
@@ -76,16 +78,19 @@ const Header = () =>
               <Button data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="800"
-                data-aos-offset="0" variant='contained' href='#about'>Learn More</Button>
-              <Button href='#contact' data-aos="fade-zoom-in"
+                data-aos-offset="0" variant='outlined' sx={{ color: 'white' }} href='#about'>Learn More</Button>
+              <Button href='#contact'
+                sx={{ backgroundColor: "#07F8EC", color: 'black' }}
+                data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="900"
                 data-aos-offset="0" variant='contained'>Contact Us</Button>
+
             </Stack>
           </Box>
         </Container>
-
       </Container>
+      <WaveDivider />
     </Box>
   );
 };

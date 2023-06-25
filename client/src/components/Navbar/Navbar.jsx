@@ -29,7 +29,7 @@ export default function NavBar()
 
   return (
     <AppBar position="sticky" sx={{ zIndex:3, color: "white", backgroundColor: "black" }} >
-      <Container maxWidth="xl" >
+      <Container maxWidth="lg" >
         <Toolbar disableGutters>
           <Typography
             variant="h6"

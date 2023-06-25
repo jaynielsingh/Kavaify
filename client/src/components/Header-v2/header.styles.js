@@ -1,15 +1,11 @@
-import { keyframes } from "@emotion/react";
-
-export const gradientBackground = keyframes`
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+export const waveStyles = {
+  main: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    width: '100%',
+    overflow:' hidden',
+    lineHeight: 0,
+    transform: 'rotate(180deg)',
   }
-  `;
+}

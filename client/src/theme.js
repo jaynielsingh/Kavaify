@@ -1,5 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 import { green, grey, red } from "@mui/material/colors";
+import {responsiveFontSizes} from '@mui/material/styles'
 
 const rawTheme = createTheme({
   palette: {
@@ -44,7 +45,7 @@ const fontHeader = {
   textTransform: "uppercase",
 };
 
-const theme = {
+let theme = {
   ...rawTheme,
   palette: {
     ...rawTheme.palette,
@@ -61,7 +62,7 @@ const theme = {
       ...rawTheme.typography.h1,
       ...fontHeader,
       letterSpacing: 0,
-      fontSize: 60,
+      fontSize: 90,
     },
     h2: {
       ...rawTheme.typography.h2,
@@ -80,7 +81,7 @@ const theme = {
     },
     h5: {
       ...rawTheme.typography.h5,
-      fontSize: 25,
+      fontSize: 22,
       fontWeight: rawTheme.typography.fontWeightLight,
     },
     h6: {
@@ -103,5 +104,6 @@ const theme = {
     },
   },
 };
+theme = responsiveFontSizes(theme)
 
 export default theme;

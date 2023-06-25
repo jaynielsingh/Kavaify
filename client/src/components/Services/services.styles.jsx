@@ -1,3 +1,4 @@
+
 export const itemStyles = {
 
   flexDirection: "column",
@@ -23,15 +24,7 @@ export const featureStyles = {
 
   // },
   sectionWrapper: {
-    width: "100%",
-    display: "flex",
-    overflow: "hidden",
-    position: 'static',
-    backgroundColor: 'primary.dark',
-    // backgroundColor: "#0D495D",
-    // backgroundImage: "url('https://www.transparenttextures.com/patterns/connected.png')",
 
- 
 
 
   },
@@ -46,6 +39,6 @@ export const featureStyles = {
 
   titleWrapper: {
     my: 5,
-    color: '#50c787',
+    color: '#C0703F',
   },
 };

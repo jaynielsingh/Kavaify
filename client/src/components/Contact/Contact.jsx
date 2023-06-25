@@ -1,7 +1,6 @@
 import { Box, Button, Container, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import axios from "axios";
-import ContactImage from "../../assets/images/hero-bg-3.jpg";
 
 
 const Contact = () =>
@@ -44,29 +43,37 @@ const Contact = () =>
     <Box
       id="contact"
       sx={{
-        width: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        position: 'relative',
-        backgroundImage: `url(${ContactImage})`,
-        backgroundRepeat: "no-repeat",
-        opacity: 0.98
+        // width: "100%",
+        // display: "flex",
+        // overflow: 'hidden',
+        // alignItems: "center",
+        // position: 'relative',
+        // backgroundImage: `url(${ContactImage})`,
+        // backgroundSize: 'cover',
+        // backgroundRepeat: "no-repeat",
 
         // height: "100vh",
       }}
     >
       <Container>
-        <Typography align="center" component="h2" variant="h2" sx={{ mt: 20, mb: 6, fontFamily: "Wallpoet", color: "black" }}>
+        <Typography align="center" component="h1" variant="h1" sx={{
+          mt: 20, mb: 6,
+          fontFamily: "Wallpoet",
+          color: "whitesmoke",
+          position: 'relative'
+        }}>
           Contact Us
         </Typography>
-        <Typography variant="h5" paragraph align="center">Let Us Bring Your Business Online</Typography>
+        <Typography sx={{
+          position: 'relative',
+          color: "whitesmoke"
+        }} variant="h5" paragraph align="center">Let Us Bring Your Business Online</Typography>
 
         <Box
           component="form"
           onChange={handleChange}
           onSubmit={handleSubmit}
-          sx={{ color: 'black', px: 5, mt: 6, mb: 10 }}
+          sx={{ borderRadius: '25px', backgroundColor: "whitesmoke", color: 'black', px: 5, mt: 6, mb: 10 }}
         >
           <TextField
             required
@@ -78,6 +85,7 @@ const Contact = () =>
             variant="filled"
             fullWidth
             autoComplete="name"
+            sx={{ borderRadius: 2, backgroundColor: 'white', mt: 5, mb: 2 }}
 
 
           />
@@ -92,6 +100,8 @@ const Contact = () =>
             fullWidth
             autoComplete="email"
             variant="filled"
+            sx={{ borderRadius: 2, backgroundColor: 'white', mt: 5, mb: 2 }}
+
           />
           <TextField
             required
@@ -104,12 +114,14 @@ const Contact = () =>
             multiline
             variant="filled"
             rows={5}
+            sx={{ borderRadius: 1, backgroundColor: 'white', mt: 5, mb: 2 }}
+
           />
           <Button
             fullWidth
             type="submit"
-            variant="contained"
-            sx={{ mt: 5, mb: 5, p: 2, backgroundColor: "black", color: "white" }}
+            variant="outlined"
+            sx={{ borderRadius: '25px', mt: 5, mb: 5, p: 2,  color: "white" }}
           >
             Send Message
           </Button>

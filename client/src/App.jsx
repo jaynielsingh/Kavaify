@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header-v2/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Services from "./components/Services/Services";
+import AboutUs from "./components/AboutUs/aboutUs";
 import "./index.css";
 import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -25,6 +26,7 @@ function App()
     <>
       <Navbar />
       <Header />
+      <AboutUs/>
       <About />
       <Services />
       <Contact />

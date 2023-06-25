@@ -4,7 +4,12 @@ export const itemStyles = {
   alignItems: "center",
   px: 5,
   py: 5,
-  boxShadow: "0px 0px 20px 0px rgba(0,100,0,0.2)",
+  boxShadow: "0px 0px 20px 0px #C0703F",
+  "&:hover": {
+    boxShadow: "0px 0px 20px 0px rgba(0,0,0,0.2)",
+    transform: "scale(1.05)",
+  },
+  transition: "0.5s",
 
 };
 
@@ -13,7 +18,6 @@ export const featureStyles = {
     width: "100%",
     display: "flex",
     overflow: "hidden",
-    backgroundColor: 'primary.dark',
     // backgroundColor: '#116175',
     // backgroundColor: "#0D495D",
     backgroundImage: "url('https://www.transparenttextures.com/patterns/ag-square.png')",
@@ -35,6 +39,7 @@ export const featureStyles = {
     fontFamily: "Wallpoet",
     mt: 20,
     color: 'white',
+    position: 'relative',
   },
 
 
@@ -44,12 +49,12 @@ export const featureStyles = {
   },
 
   contentWrapper: {
-  
+
   },
 
   icon: {
     bgcolor: "black",
-    color: "#50c878",
+    color: "#C0703F",
     width: 55,
     height: 55
   }
