@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Grid, Typography, Box } from "@mui/material/";
+import { Container, Grid, Typography, Box, Divider } from "@mui/material/";
 import { featureStyles } from "./about.styles";
 import { featureItems } from "./const/featureItems";
 import FeatureCard from "../common/FeatureCards/FeatureCard";
@@ -11,7 +11,10 @@ const Features = () =>
   return (
     <Box id="about" component="section" sx={featureStyles.sectionWrapper}>
       <Container>
-        <Typography sx={featureStyles.titleStyle} variant="h1" color="white" align="center">Why Kavaify?</Typography>
+        <Typography sx={featureStyles.titleStyle} variant="h1" color="white" align="center">
+          Why Kavaify?
+          <Divider />
+        </Typography>
         <Typography sx={{ mt: 5, position: 'relative' }} color='white' paragraph variant="h5" align="center">
           Simple Yet Professional Design
         </Typography>

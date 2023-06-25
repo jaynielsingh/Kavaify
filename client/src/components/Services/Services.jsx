@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 import React from "react";
 import { services } from "./const/servicesItems";
 import { featureStyles } from "./services.styles";
@@ -11,6 +11,7 @@ const Services = () =>
       <Container>
         <Typography variant="h1" align="center" sx={{ position: 'relative', color: 'white', mt: 20, fontFamily: "Wallpoet", }}>
           What We Offer
+        <Divider/>
         </Typography>
         <Typography align="center" color='white' variant="h5" paragraph sx={{
           position: 'relative',

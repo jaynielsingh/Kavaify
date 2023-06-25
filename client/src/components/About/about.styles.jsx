@@ -17,6 +17,7 @@ export const featureStyles = {
   sectionWrapper: {
     width: "100%",
     display: "flex",
+    position: 'relative',
     overflow: "hidden",
     // backgroundColor: '#116175',
     // backgroundColor: "#0D495D",
@@ -37,7 +38,8 @@ export const featureStyles = {
 
   titleStyle: {
     fontFamily: "Wallpoet",
-    mt: 20,
+    mt: 15,
+    mb: 10,
     color: 'white',
     position: 'relative',
   },

@@ -63,6 +63,7 @@ const Header = () =>
               mt: "25%",
               padding: 5,
               boxShadow: "0px 0px 20px 2px #07F8EC",
+              borderRadius: '10px',
 
             }
             }>
@@ -73,7 +74,7 @@ const Header = () =>
               {/* Where Creativity Meets Functionality: Web Design at Its <span style={{position: 'inherit'}}> Finest</span> */}
             </Typography>
             <Stack direction='row' justifyContent='center' spacing={3} sx={{
-              pt: 5
+              pt: 8, 
             }}>
               <Button data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
@@ -85,7 +86,6 @@ const Header = () =>
                 data-aos-easing="ease-in-back"
                 data-aos-delay="900"
                 data-aos-offset="0" variant='contained'>Contact Us</Button>
-
             </Stack>
           </Box>
         </Container>
