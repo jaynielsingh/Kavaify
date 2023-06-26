@@ -13,7 +13,6 @@ const Features = () =>
       <Container>
         <Typography sx={featureStyles.titleStyle} variant="h1" color="white" align="center">
           Why Kavaify?
-          <Divider />
         </Typography>
         <Typography sx={{ mt: 5, position: 'relative' }} color='white' paragraph variant="h5" align="center">
           Simple Yet Professional Design
@@ -25,12 +24,16 @@ const Features = () =>
           <Grid container spacing={5}>
             {featureItems.map((service) => (
               <Grid item xs={12} lg={4} id={service.id} key={service.id}>
-                <FeatureCard
-                  id={service.id}
-                  icon={service.icon}
-                  title={service.title}
-                  content={service.content}
-                />
+                <Box data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000">
+                  <FeatureCard
+                    id={service.id}
+                    icon={service.icon}
+                    title={service.title}
+                    content={service.content}
+                  />
+                </Box>
                 {/* <Box sx={itemStyles}>
                   <Avatar sizes="" sx={featureStyles.icon}>{item.icon}</Avatar>
                   <Typography variant="h6" sx={featureStyles.titleWrapper}>

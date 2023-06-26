@@ -43,6 +43,8 @@ const Contact = () =>
     <Box
       id="contact"
       sx={{
+        backgroundImage: "url('https://www.transparenttextures.com/patterns/cartographer.png')",
+
         // width: "100%",
         // display: "flex",
         // overflow: 'hidden',
@@ -55,7 +57,7 @@ const Contact = () =>
         // height: "100vh",
       }}
     >
-      <Container>
+      <Container >
         <Typography align="center" component="h1" variant="h1" sx={{
           mt: 20, mb: 6,
           fontFamily: "Wallpoet",

@@ -22,7 +22,7 @@ export const featureItems = [
     id: 1,
     title: "All-in-One Digital Solutions",
     content:
-      "Our comprehensive digital solutions encompass web design, branding, SEO, and more, providing clients with a one-stop-shop for their online success",
+      "Our comprehensive digital solutions encompass web design, branding, SEO, and more, providing clients with a one-stop-shop for their online success.",
     icon: <DiscountIcon sx={classes.icon} />,
   },
   {

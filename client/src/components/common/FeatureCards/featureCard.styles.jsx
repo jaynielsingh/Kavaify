@@ -5,7 +5,6 @@ export const itemStyles = {
   borderRadius: '25px',
   flexDirection: "column",
   alignItems: "center",
-  boxShadow: "0px 0px 20px 0px #07F8EC",
   "&:hover": {
     boxShadow: "0px 0px 20px 0px rgba(0,0,0,0.2)",
     transform: "scale(1.05)",
@@ -21,6 +20,7 @@ export const featureStyles = {
 
     display: "flex",
 
+
   },
 
 
@@ -30,12 +30,15 @@ export const featureStyles = {
     color: 'white',
     alignItems: 'center',
 
+
   },
 
   contentWrapper: {
     my: 2,
     py: 2,
     alignItems: 'center',
+
+
   }
 };
 

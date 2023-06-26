@@ -9,13 +9,15 @@ import WaveDivider from '../common/waveDivider/waveDivider';
 
 const Header = () =>
 {
-  
+
   return (
     <Box
       sx={{
         position: 'relative',
         overflow: 'hidden',
         minHeight: '100vh',
+
+
         // background: 'linear-gradient(0.25turn, #ee7752,  #23a6d5)',
       }}
     >
@@ -53,17 +55,23 @@ const Header = () =>
               sx={{ pt: 30, fontFamily: 'Monoton', fontSize: '80px' }} variant='h1' component='h1' align='center' color='white' gutterBottom>
               Kava<span style={{ color: '#07F8EC' }}>ify</span>
             </Typography>
-
+          </Box>
+          <Box data-aos='fade-zoom-in'
+            data-aos-easing="ease-in-back"
+            data-aos-delay="1800">
+            <Typography fontWeight='regular'  variant='h5' component='h2' align='center' color='white'>
+              Web Development At It's <span style={{ color: '#07F8EC' }}>Finest</span>
+            </Typography>
           </Box>
           <Box data-aos="zoom-in"
             data-aos-delay="500"
 
             data-aos-easing="ease-in-sine"
             sx={{
-              mt: "25%",
+              mt: "20%",
               padding: 5,
               boxShadow: "0px 0px 20px 2px #07F8EC",
-              borderRadius: '10px',
+              borderRadius: '50px',
 
             }
             }>
@@ -74,7 +82,7 @@ const Header = () =>
               {/* Where Creativity Meets Functionality: Web Design at Its <span style={{position: 'inherit'}}> Finest</span> */}
             </Typography>
             <Stack direction='row' justifyContent='center' spacing={3} sx={{
-              pt: 8, 
+              pt: 8,
             }}>
               <Button data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"

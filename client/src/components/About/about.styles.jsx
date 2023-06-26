@@ -21,7 +21,7 @@ export const featureStyles = {
     overflow: "hidden",
     // backgroundColor: '#116175',
     // backgroundColor: "#0D495D",
-    backgroundImage: "url('https://www.transparenttextures.com/patterns/ag-square.png')",
+
 
 
 

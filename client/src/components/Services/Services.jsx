@@ -11,7 +11,6 @@ const Services = () =>
       <Container>
         <Typography variant="h1" align="center" sx={{ position: 'relative', color: 'white', mt: 20, fontFamily: "Wallpoet", }}>
           What We Offer
-        <Divider/>
         </Typography>
         <Typography align="center" color='white' variant="h5" paragraph sx={{
           position: 'relative',
@@ -21,15 +20,18 @@ const Services = () =>
           <Container maxWidth='lg' sx={featureStyles.containerWrapper}>
             <Grid container spacing={5}>
               {services.map((service) => (
-                <Grid sx={{
-                  py: 6
-                }} key={service.id} item xs={12} lg={4} md={6}>
-                  <FeatureCard
-                    id={service.id}
-                    icon={service.icon}
-                    title={service.title}
-                    content={service.content}
-                  />
+                <Grid key={service.id} item xs={12} lg={4} md={6}>
+                  <Box data-aos="flip-left"
+                    data-aos-delay='600'
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <FeatureCard
+                      id={service.id}
+                      icon={service.icon}
+                      title={service.title}
+                      content={service.content}
+                    />
+                  </Box>
                 </Grid>
               ))}
             </Grid>

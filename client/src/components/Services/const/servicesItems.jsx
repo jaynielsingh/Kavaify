@@ -10,7 +10,8 @@ const classes = {
   icon: {
     fontSize: 30,
     color: "#07F8EC",
-    py: 4,
+    py: 2,
+    
   },
 };
 export const services = [

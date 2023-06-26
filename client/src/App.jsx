@@ -9,6 +9,7 @@ import AboutUs from "./components/AboutUs/aboutUs";
 import "./index.css";
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import Process from "./components/Process/process";
 
 
 
@@ -28,6 +29,7 @@ function App()
       <Header />
       <AboutUs/>
       <About />
+      <Process/>
       <Services />
       <Contact />
       <Footer />
