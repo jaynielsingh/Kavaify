@@ -31,7 +31,6 @@ router.post("/", async (req, res, next) =>
       ciphers: "SSLv3",
     },
   });
-  console.log(MY_EMAIL, MY_PASSWORD);
 
 
   const info = await transporter.sendMail({
@@ -44,7 +43,7 @@ router.post("/", async (req, res, next) =>
 
 
   // res.json(message);
-  res.redirect('/')
+  res.redirect(req.path)
 });
 
 module.exports = router;
