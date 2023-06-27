@@ -27,8 +27,8 @@ const Header = () =>
           position: "fixed",
           top: 0,
           left: 0,
-          width: '100%',
-          height: '100%',
+          width: '100vw',
+          height: '100vh',
           backgroundImage: `url(${BackgroundImage})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
@@ -52,7 +52,7 @@ const Header = () =>
             data-aos-easing="ease-in-back"
             data-aos-delay="1500">
             <Typography
-              sx={{ pt: 30, fontFamily: 'Monoton', fontSize: '80px' }} variant='h1' component='h1' align='center' color='white' gutterBottom>
+              sx={{ pt: 30, fontFamily: 'Monoton', fontSize: '60px' }} variant='h1' component='h1' align='center' color='white' gutterBottom>
               Kava<span style={{ color: '#07F8EC' }}>ify</span>
             </Typography>
           </Box>
@@ -81,8 +81,9 @@ const Header = () =>
               {/* "Elevate, Innovate, Dominate: Small Business Edition" */}
               {/* Where Creativity Meets Functionality: Web Design at Its <span style={{position: 'inherit'}}> Finest</span> */}
             </Typography>
-            <Stack direction='row' justifyContent='center' spacing={3} sx={{
+            <Stack direction={{xs: 'column', md: 'row'}} justifyContent='center' spacing={3} sx={{
               pt: 8,
+              
             }}>
               <Button href='#mission' data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"

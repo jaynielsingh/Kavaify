@@ -39,7 +39,7 @@ export default function NavBar()
               mr: 5,
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
-              fontWeight: 700,
+              fontWeight: 600,
               letterSpacing: ".2rem",
 
               color: "inherit",
@@ -100,7 +100,7 @@ export default function NavBar()
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: "monospace",
-              fontWeight: 700,
+              fontWeight: 600,
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",

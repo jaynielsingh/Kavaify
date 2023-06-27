@@ -7,7 +7,7 @@ export default function AboutUs()
     <Box id='mission' component='section' sx={{
       pt: 5,
       py: 6,
-      width: "100%",
+      width: "100vw",
       position: 'relative',
       display: "flex",
       overflow: "hidden",
@@ -36,7 +36,7 @@ export default function AboutUs()
             data-aos-offset="300"
             data-aos-delay='500'
             data-aos-easing="ease-in-sine" sx={{
-              display: 'flex',
+              display: {xs: 12, md: 6},
               height: '400px',
               width: '50vw',
               borderRadius: '10px',
