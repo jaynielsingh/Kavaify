@@ -15,13 +15,12 @@ export const itemStyles = {
 
 export const featureStyles = {
   sectionWrapper: {
+    py: 6,
     width: "100%",
-    display: "flex",
     position: 'relative',
+    display: "flex",
     overflow: "hidden",
-    // backgroundColor: '#116175',
-    // backgroundColor: "#0D495D",
-
+    backgroundImage: "url('https://www.transparenttextures.com/patterns/cartographer.png')",
 
 
 

@@ -59,7 +59,7 @@ const Header = () =>
           <Box data-aos='fade-zoom-in'
             data-aos-easing="ease-in-back"
             data-aos-delay="1800">
-            <Typography fontWeight='regular'  variant='h5' component='h2' align='center' color='white'>
+            <Typography fontWeight='regular' variant='h5' component='h2' align='center' color='white'>
               Web Development At It's <span style={{ color: '#07F8EC' }}>Finest</span>
             </Typography>
           </Box>
@@ -84,10 +84,10 @@ const Header = () =>
             <Stack direction='row' justifyContent='center' spacing={3} sx={{
               pt: 8,
             }}>
-              <Button data-aos="fade-zoom-in"
+              <Button href='#mission' data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="800"
-                data-aos-offset="0" variant='outlined' sx={{ color: 'white' }} href='#about'>Learn More</Button>
+                data-aos-offset="0" variant='outlined' sx={{ color: "#07F8EC", backgroundColor:'black' }}>Learn More</Button>
               <Button href='#contact'
                 sx={{ backgroundColor: "#07F8EC", color: 'black' }}
                 data-aos="fade-zoom-in"

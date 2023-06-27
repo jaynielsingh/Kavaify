@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Grid, Typography, Box, Divider } from "@mui/material/";
+import { Container, Grid, Typography, Box } from "@mui/material/";
 import { featureStyles } from "./about.styles";
 import { featureItems } from "./const/featureItems";
 import FeatureCard from "../common/FeatureCards/FeatureCard";
@@ -24,9 +24,9 @@ const Features = () =>
           <Grid container spacing={5}>
             {featureItems.map((service) => (
               <Grid item xs={12} lg={4} id={service.id} key={service.id}>
-                <Box data-aos="flip-left"
+                <Box data-aos="zoom-in"
                   data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000">
+                  data-aos-duration="1000">
                   <FeatureCard
                     id={service.id}
                     icon={service.icon}
@@ -34,15 +34,6 @@ const Features = () =>
                     content={service.content}
                   />
                 </Box>
-                {/* <Box sx={itemStyles}>
-                  <Avatar sizes="" sx={featureStyles.icon}>{item.icon}</Avatar>
-                  <Typography variant="h6" sx={featureStyles.titleWrapper}>
-                    {item.title}
-                  </Typography>
-                  <Typography variant="h5" color='white' sx={{fontSize: '20px'}}>
-                    {item.content}
-                  </Typography>
-                </Box> */}
               </Grid>
             ))}
           </Grid>

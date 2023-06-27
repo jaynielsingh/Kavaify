@@ -43,6 +43,10 @@ const Contact = () =>
     <Box
       id="contact"
       sx={{
+        width: "100%",
+        position: 'relative',
+        display: "flex",
+        overflow: "hidden",
         backgroundImage: "url('https://www.transparenttextures.com/patterns/cartographer.png')",
 
         // width: "100%",
@@ -75,7 +79,7 @@ const Contact = () =>
           component="form"
           onChange={handleChange}
           onSubmit={handleSubmit}
-          sx={{ borderRadius: '25px', backgroundColor: "whitesmoke", color: 'black', px: 5, mt: 6, mb: 10 }}
+          sx={{ borderRadius: '25px', color: 'black', px: 5, mt: 6, mb: 10 }}
         >
           <TextField
             required
@@ -123,7 +127,7 @@ const Contact = () =>
             fullWidth
             type="submit"
             variant="outlined"
-            sx={{ borderRadius: '25px', mt: 5, mb: 5, p: 2,  color: "white" }}
+            sx={{ borderRadius: '25px', mt: 5, mb: 5, p: 2, color: '#07F8EC', backgroundColor: 'black' }}
           >
             Send Message
           </Button>
