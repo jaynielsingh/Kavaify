@@ -16,7 +16,7 @@ export const itemStyles = {
 export const featureStyles = {
   sectionWrapper: {
     py: 6,
-    width: "100%",
+    width: "100vw",
     position: 'relative',
     display: "flex",
     overflow: "hidden",

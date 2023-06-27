@@ -46,7 +46,7 @@ export default function NavBar()
               textDecoration: "none",
             }}
           >
-            <img src={Logo} alt="logo" />
+
             Kavaify
           </Typography>
 
