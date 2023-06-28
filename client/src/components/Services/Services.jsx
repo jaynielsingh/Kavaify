@@ -21,7 +21,7 @@ const Services = () =>
             <Grid container spacing={5}>
               {services.map((service) => (
                 <Grid key={service.id} item xs={12} lg={4} md={6}>
-                  <Box data-aos="flip-left"
+                  <Box data-aos="zoom-in"
                     data-aos-delay='600'
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
