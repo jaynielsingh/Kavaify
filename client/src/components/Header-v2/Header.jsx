@@ -1,7 +1,7 @@
 /* eslint-disable no-lone-blocks */
 import { Box, Button, Container, Stack, Typography } from '@mui/material';
 import React from 'react';
-import BackgroundImage from "../../assets/images/blurry-gradient-bg1.svg";
+import BackgroundImage from "../../assets/images/main-bg-2.jpg";
 import WaveDivider from '../common/waveDivider/waveDivider';
 
 
