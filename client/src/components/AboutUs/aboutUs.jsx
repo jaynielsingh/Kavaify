@@ -44,7 +44,7 @@ export default function AboutUs()
             }}>
           </Box>
           <Box sx={{
-            display: 'flex', pt: 20, width: '500px', pb: 25,
+            display: 'flex', pt: 20, pb: 25
           }}>
             <Typography
               data-aos="fade-right"
