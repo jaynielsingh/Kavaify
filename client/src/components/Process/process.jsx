@@ -25,8 +25,7 @@ const Process = () =>
           sx={{ position: 'relative', color: 'white', my: 5 }}>
           Our streamlined web development process ensures a seamless journey from the initial concept to the final website launch. Here's an overview of how our web development process works:
         </Typography>
-        <Box data-aos="flip-down"
-          data-aos-delay="500"
+        <Box data-aos="zoom-in"
           sx={{ py: 10 }}>
           <Box sx={{
             overflow: 'hidden',
@@ -50,8 +49,7 @@ const Process = () =>
             </Typography>
           </Box>
         </Box>
-        <Box data-aos="flip-down"
-          data-aos-delay="500"
+        <Box data-aos="zoom-in"
           sx={{ py: 10 }}>
           <Box sx={{
             overflow: 'hidden',
@@ -76,8 +74,7 @@ const Process = () =>
             </Typography>
           </Box>
         </Box>
-        <Box data-aos="flip-down"
-          data-aos-delay="500"
+        <Box data-aos="zoom-in"
           sx={{ py: 10 }}>
           <Box sx={{
             overflow: 'hidden',

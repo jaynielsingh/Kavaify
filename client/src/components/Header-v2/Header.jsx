@@ -1,7 +1,7 @@
 /* eslint-disable no-lone-blocks */
 import { Box, Button, Container, Stack, Typography } from '@mui/material';
 import React from 'react';
-import BackgroundImage from "../../assets/images/main-bg-2.jpg";
+import BackgroundImage from "../../assets/images/main-bg-4.jpg";
 import WaveDivider from '../common/waveDivider/waveDivider';
 
 
@@ -56,13 +56,7 @@ const Header = () =>
               Kava<span style={{ color: '#07F8EC' }}>ify</span>
             </Typography>
           </Box>
-          <Box data-aos='fade-zoom-in'
-            data-aos-easing="ease-in-back"
-            data-aos-delay="1800">
-            <Typography fontWeight='regular' variant='h5' component='h2' align='center' color='white'>
-              Web Development At It's <span style={{ color: '#07F8EC' }}>Finest</span>
-            </Typography>
-          </Box>
+
           <Box data-aos="zoom-in"
             data-aos-delay="500"
 
@@ -75,20 +69,27 @@ const Header = () =>
 
             }
             }>
+            <Box data-aos='fade-zoom-in'
+              data-aos-easing="ease-in-back"
+              data-aos-delay="1800">
+              <Typography fontWeight='regular' variant='h5' component='h2' align='center' color='white'>
+                Web Development At Its <span style={{ color: '#07F8EC' }}>Finest</span>
+              </Typography>
+            </Box>
 
-            <Typography sx={{}} variant='h5' fontSize={25} component='h2' align='center' color='white' paragraph>
+            <Typography sx={{ pt: '50px'}} variant='h5' fontSize={25} component='h2' align='center' color='white' paragraph>
               Design | Develop | Dominate
               {/* "Elevate, Innovate, Dominate: Small Business Edition" */}
               {/* Where Creativity Meets Functionality: Web Design at Its <span style={{position: 'inherit'}}> Finest</span> */}
             </Typography>
-            <Stack direction={{xs: 'column', md: 'row'}} justifyContent='center' spacing={3} sx={{
+            <Stack direction={{ xs: 'column', md: 'row' }} justifyContent='center' spacing={3} sx={{
               pt: 8,
-              
+
             }}>
               <Button href='#mission' data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="800"
-                data-aos-offset="0" variant='outlined' sx={{ color: "#07F8EC", backgroundColor:'black' }}>Learn More</Button>
+                data-aos-offset="0" variant='outlined' sx={{ color: "#07F8EC", backgroundColor: 'black' }}>Learn More</Button>
               <Button href='#contact'
                 sx={{ backgroundColor: "#07F8EC", color: 'black' }}
                 data-aos="fade-zoom-in"
