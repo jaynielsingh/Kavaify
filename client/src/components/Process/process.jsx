@@ -43,9 +43,9 @@ const Process = () =>
             backgroundPosition: 'center',
           }}>
           </Box>
-          <Box sx={{ px: 5, pt: 10, }}>
+          <Box sx={{ py: 10 }}>
             <Typography sx={{
-              p: 7, boxShadow: "0px 0px 20px 2px #07F8EC",
+              p: 3, boxShadow: "0px 0px 20px 2px #07F8EC",
               borderRadius: '50px',
             }} variant='h5' align='center' color='white'>
               1. Planning and Requirements Gathering:
@@ -74,9 +74,9 @@ const Process = () =>
             backgroundPosition: 'center',
           }}>
           </Box>
-          <Box sx={{ px: 5, pt: 10, }}>
+          <Box sx={{ py: 10, }}>
             <Typography sx={{
-              p: 7, boxShadow: "0px 0px 20px 2px #07F8EC",
+              p: 3, boxShadow: "0px 0px 20px 2px #07F8EC",
               borderRadius: '50px',
             }} variant='h5' align='center' color='white'>
               2. Development and Implementation:
@@ -108,7 +108,7 @@ const Process = () =>
           </Box>
           <Box sx={{ px: 5, pt: 10, }}>
             <Typography sx={{
-              p: 7, boxShadow: "0px 0px 20px 2px #07F8EC",
+              p: 3, boxShadow: "0px 0px 20px 2px #07F8EC",
               borderRadius: '50px',
             }} variant='h5' align='center' color='white'>
               3. Deployment and Maintenance:
