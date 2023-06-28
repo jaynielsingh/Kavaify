@@ -24,6 +24,7 @@ export default function Footer()
     <Box
       component="footer"
       sx={{
+        display: 'relative',
         py: 2,
         px: 2,
       }}

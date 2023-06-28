@@ -25,7 +25,7 @@ const BottomWaveDivider = () =>
           position: 'relative',
           display: 'block',
           width: 'calc(100% + 1.3px)',
-          height: '109px',
+          height: '50px',
           transform: 'rotateY(180deg)',
         }}
       >
