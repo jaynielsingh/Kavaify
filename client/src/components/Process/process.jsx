@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from '@mui/material';
-import PlanningPhoto from '../../assets/images/planning-1.jpg';
-import DevelopmentPhoto from '../../assets/images/coding-bg-1.jpg';
-import DealPhoto from '../../assets/images/deal-bg-1.jpg';
+import PlanningPhoto from '../../assets/images/step-1.svg';
+import DevelopmentPhoto from '../../assets/images/step-2.svg';
+import DealPhoto from '../../assets/images/step-3.svg';
 import React from 'react';
 
 const Process = () =>
@@ -45,7 +45,7 @@ const Process = () =>
           </Box>
           <Box sx={{ py: 10 }}>
             <Typography sx={{
-              p: 3, boxShadow: "0px 0px 20px 2px #07F8EC",
+              p: 3, 
               borderRadius: '50px',
             }} variant='h5' align='center' color='white'>
               1. Planning and Requirements Gathering:
@@ -76,7 +76,7 @@ const Process = () =>
           </Box>
           <Box sx={{ py: 10, }}>
             <Typography sx={{
-              p: 3, boxShadow: "0px 0px 20px 2px #07F8EC",
+              p: 3,
               borderRadius: '50px',
             }} variant='h5' align='center' color='white'>
               2. Development and Implementation:
@@ -108,8 +108,7 @@ const Process = () =>
           </Box>
           <Box sx={{ px: 5, pt: 10, }}>
             <Typography sx={{
-              p: 3, boxShadow: "0px 0px 20px 2px #07F8EC",
-              borderRadius: '50px',
+              p: 3,
             }} variant='h5' align='center' color='white'>
               3. Deployment and Maintenance:
               Set up the website's server and hosting environment.

@@ -2,7 +2,8 @@
 import { Box, Button, Container, Stack, Typography } from '@mui/material';
 import React from 'react';
 import BackgroundImage from "../../assets/images/main-bg-4.jpg";
-import WaveDivider from '../common/waveDivider/waveDivider';
+import HeroImage from '../../assets/images/hero-1.svg'
+
 
 
 
@@ -18,17 +19,16 @@ const Header = () =>
         minHeight: '100vh',
 
 
-        // background: 'linear-gradient(0.25turn, #ee7752,  #23a6d5)',
+        background: 'linear-gradient(0.25turn, #ee7752,  #23a6d5)',
       }}
     >
       <Box
-
         sx={{
           position: "fixed",
           top: 0,
           left: 0,
-          width: '100vw',
-          height: '100vh',
+          width: '100%',
+          height: '100%',
           backgroundImage: `url(${BackgroundImage})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
@@ -36,71 +36,80 @@ const Header = () =>
           // mixBlendMode: 'multiply', // Adjust blend mode for desired effect
         }}
       ></Box>
-      <Container
-        maxWidth="lg"
-        sx={{
-          position: 'relative',
-          zIndex: 1,
-          py: 8,
-
-        }}
-      >
-
-        <Container maxWidth="sm">
-          <Box
-            data-aos='fade-zoom-in'
-            data-aos-easing="ease-in-back"
-            data-aos-delay="1500">
-            <Typography
-              sx={{ pt: 30, fontFamily: 'Monoton', fontSize: '60px' }} variant='h1' component='h1' align='center' color='white' gutterBottom>
-              Kava<span style={{ color: '#07F8EC' }}>ify</span>
-            </Typography>
-          </Box>
-
-          <Box data-aos="zoom-in"
-            data-aos-delay="500"
-
-            data-aos-easing="ease-in-sine"
-            sx={{
-              mt: "20%",
-              padding: 5,
-              boxShadow: "0px 0px 20px 2px #07F8EC",
-              borderRadius: '50px',
-
-            }
-            }>
-            <Box data-aos='fade-zoom-in'
+      {/* <WaveDivider /> */}
+      <Container maxWidth='lg' >
+        <Stack align="center" spacing={6} direction={{ sm: 'column', lg: 'row' }}>
+          <Box>
+            <Box
+              data-aos='fade-zoom-in'
               data-aos-easing="ease-in-back"
-              data-aos-delay="1800">
-              <Typography fontWeight='regular' variant='h5' component='h2' align='center' color='white'>
-                Web Development At Its <span style={{ color: '#07F8EC' }}>Finest</span>
+              data-aos-delay="1500">
+              <Typography
+                sx={{ pt: 30, fontFamily: 'Monoton', fontSize: '60px' }} variant='h1' component='h1' align='center' color='white' gutterBottom>
+                Kava<span style={{ color: '#07F8EC' }}>ify</span>
               </Typography>
             </Box>
+            <Box data-aos="zoom-in"
+              data-aos-delay="500"
 
-            <Typography sx={{ pt: '50px'}} variant='h5' fontSize={25} component='h2' align='center' color='white' paragraph>
-              Design | Develop | Dominate
-              {/* "Elevate, Innovate, Dominate: Small Business Edition" */}
-              {/* Where Creativity Meets Functionality: Web Design at Its <span style={{position: 'inherit'}}> Finest</span> */}
-            </Typography>
-            <Stack direction={{ xs: 'column', md: 'row' }} justifyContent='center' spacing={3} sx={{
-              pt: 8,
+              data-aos-easing="ease-in-sine"
+              sx={{
+                my: 2,
+                padding: 5,
+                borderRadius: '50px',
+              }
+              }>
+              <Box data-aos='fade-zoom-in'
+                data-aos-easing="ease-in-back"
+                data-aos-delay="1800">
+                <Typography fontWeight='regular' variant='h5' component='h2' align='center' color='white'>
+                  Web Development At Its <span style={{ color: '#07F8EC' }}>Finest</span>
+                </Typography>
+              </Box>
+              <Typography sx={{ pt: '50px' }} variant='h5' fontSize={25} component='h2' align='center' color='white' paragraph>
+                Design | Develop | Dominate
+                {/* "Elevate, Innovate, Dominate: Small Business Edition" */}
+                {/* Where Creativity Meets Functionality: Web Design at Its <span style={{position: 'inherit'}}> Finest</span> */}
+              </Typography>
+              <Container maxWidth='xs'>
 
-            }}>
-              <Button href='#mission' data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="800"
-                data-aos-offset="0" variant='outlined' sx={{ color: "#07F8EC", backgroundColor: 'black' }}>Learn More</Button>
-              <Button href='#contact'
-                sx={{ backgroundColor: "#07F8EC", color: 'black' }}
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="900"
-                data-aos-offset="0" variant='contained'>Contact Us</Button>
-            </Stack>
+                <Button href='#mission' data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="800"
+                  data-aos-offset="0" variant='outlined' sx={{ m: 3, color: "#07F8EC", backgroundColor: 'black' }}>Learn More</Button>
+                <Button href='#contact'
+                  sx={{ m: 3, backgroundColor: "#07F8EC", color: 'black' }}
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="900"
+                  data-aos-offset="0" variant='contained'>Contact Us</Button>
+              </Container>
+            </Box>
           </Box>
-        </Container>
+          <Box sx={{ position: 'relative', width: '100%' }}>
+            <Box
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-delay='500'
+              data-aos-easing="ease-in-sine" sx={{
+                pt: 10,
+                height: '400px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '700px',
+                maxWidth: '100%',
+                backgroundImage: `url(${HeroImage})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+              }}>
+            </Box>
+          </Box>
+        </Stack>
+
+
       </Container>
-      <WaveDivider />
     </Box>
   );
 };
