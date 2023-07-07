@@ -27,28 +27,28 @@ const Process = () =>
         </Typography>
         <Box
           data-aos="zoom-in"
-          data-aos-delay='600'
+          data-aos-delay='200'
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
           sx={{ px: 5, py: 10 }}>
           <Box sx={{
             overflow: 'hidden',
             maxWidth: '100%',
-            height: '400px',
+            height: '250px',
             borderRadius: '20px',
-            p: 5,
+
             backgroundImage: `url(${PlanningPhoto})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
           }}>
           </Box>
-          <Box sx={{ py: 10 }}>
+          <Box sx={{ py: 3 }}>
             <Typography sx={{
-              p: 3, 
+              p: 3,
               borderRadius: '50px',
             }} variant='h5' align='center' color='white'>
-              1. Planning and Requirements Gathering:
+              <span style={{fontSize: '40px', color: '#07F8EC' }}>1.</span> Planning and Requirements Gathering:
               Understand the client's goals and objectives for the website.
               Identify the target audience and their needs.
               Determine the website's key features and functionalities.
@@ -58,28 +58,27 @@ const Process = () =>
         </Box>
         <Box
           data-aos="zoom-in"
-          data-aos-delay='600'
+          data-aos-delay='200'
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          sx={{ py: 10 }}>
+          sx={{ py: 3 }}>
           <Box sx={{
             overflow: 'hidden',
             maxWidth: '100%',
-            height: '400px',
+            height: '250px',
             borderRadius: '20px',
-            p: 5,
             backgroundImage: `url(${DevelopmentPhoto})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
           }}>
           </Box>
-          <Box sx={{ py: 10, }}>
+          <Box sx={{ py: 3, }}>
             <Typography sx={{
               p: 3,
               borderRadius: '50px',
             }} variant='h5' align='center' color='white'>
-              2. Development and Implementation:
+              <span style={{fontSize: '40px', color: '#07F8EC' }}>2.</span>  Development and Implementation:
               Convert the approved design into a functional website using HTML, CSS, and JavaScript.
               Develop the necessary server-side functionality using programming languages like PHP, Python, or Node.js.
               Integrate databases and implement content management systems (CMS) if required.
@@ -90,27 +89,26 @@ const Process = () =>
         </Box>
         <Box
           data-aos="zoom-in"
-          data-aos-delay='600'
+          data-aos-delay='200'
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          sx={{ py: 10 }}>
+          sx={{ py: 3 }}>
           <Box sx={{
             overflow: 'hidden',
             maxWidth: '100%',
-            height: '400px',
+            height: '250px',
             borderRadius: '20px',
-            p: 5,
             backgroundImage: `url(${DealPhoto})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
           }}>
           </Box>
-          <Box sx={{ px: 5, pt: 10, }}>
+          <Box sx={{ py: 3 }}>
             <Typography sx={{
               p: 3,
             }} variant='h5' align='center' color='white'>
-              3. Deployment and Maintenance:
+              <span style={{ fontSize: '40px', color: '#07F8EC' }}>3.</span>  Deployment and Maintenance:
               Set up the website's server and hosting environment.
               Deploy the website to the client's hosting environment or a web server.
               Provide ongoing maintenance and support, including regular updates, bug fixes, and security patches.
