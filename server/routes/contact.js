@@ -32,18 +32,26 @@ router.post("/", async (req, res, next) =>
     },
   });
 
+  async function SendMail()
+  {
+    try {
+      const info = await transporter.sendMail({
+        from: process.env.MY_EMAIL,
+        to: "jaynielsingh@yahoo.com",
+        subject: name,
+        text: `Name: ${name} \nEmail: ${email} \nMessage: ${message}`,
+      });
+      console.log("Message Sent: %s", info.messageId);
 
-  const info = await transporter.sendMail({
-    from: process.env.MY_EMAIL,
-    to: "jaynielsingh@yahoo.com",
-    subject: name,
-    text: `Name: ${name} \nEmail: ${email} \nMessage: ${message}`,
-  });
-  console.log("Message Sent: %s", info.messageId);
+      // res.json(message);
+      res.redirect(req.path);
 
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
+  }
+  SendMail();
 
-  // res.json(message);
-  res.redirect(req.path)
 });
 
 module.exports = router;
