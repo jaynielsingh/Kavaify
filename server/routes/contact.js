@@ -32,7 +32,7 @@ router.post("/", async (req, res, next) =>
     },
   });
 
-  async function SendMail()
+  async function sendMail()
   {
     try {
       const info = await transporter.sendMail({
@@ -50,7 +50,7 @@ router.post("/", async (req, res, next) =>
       console.error('Error sending email:', error);
     }
   }
-  SendMail();
+  sendMail();
 
 });
 
