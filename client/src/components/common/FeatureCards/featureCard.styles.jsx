@@ -29,6 +29,7 @@ export const featureStyles = {
     my: 5,
     color: 'white',
     alignItems: 'center',
+    
 
 
   },

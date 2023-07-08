@@ -25,8 +25,8 @@ export const featureStyles = {
   },
 
   containerWrapper: {
-    mt: 15,
-    mb: 30,
+    mt: 5,
+    mb: 10,
     display: "flex",
     position: "relative",
     color: 'white'

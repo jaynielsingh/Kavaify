@@ -6,7 +6,7 @@ const classes = {
   icon: {
     fontSize: 35,
     color: "#07F8EC",
-    py: 4,
+    py: 2,
   },
 };
 

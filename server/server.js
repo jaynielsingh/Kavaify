@@ -12,10 +12,10 @@ const bodyParser = require("body-parser");
 
 require("dotenv").config();
 
-const nodemailer = require("nodemailer");
+
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(logger("dev"));

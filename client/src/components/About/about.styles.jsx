@@ -15,7 +15,7 @@ export const itemStyles = {
 
 export const featureStyles = {
   sectionWrapper: {
-    py: 6,
+    py: 3,
     width: "100vw",
     position: 'relative',
     display: "flex",
@@ -28,7 +28,7 @@ export const featureStyles = {
 
   containerWrapper: {
     mt: 15,
-    mb: 30,
+    mb: 10,
     display: "flex",
     position: "relative",
     color: "#dadff7",
@@ -37,15 +37,14 @@ export const featureStyles = {
 
   titleStyle: {
     fontFamily: "Wallpoet",
-    mt: 15,
-    mb: 10,
+    my: 4,
     color: 'white',
     position: 'relative',
   },
 
 
   titleWrapper: {
-    my: 5,
+    my: 3,
     color: "white",
   },
 

@@ -9,7 +9,7 @@ const Process = () =>
   return (
 
     <Box sx={{
-      py: 6,
+      py: 3,
       width: "100%",
       position: 'relative',
       display: "flex",
@@ -18,7 +18,7 @@ const Process = () =>
     }}>
       <Container maxWidth='md'>
         <Typography align='center' variant='h1'
-          sx={{ position: 'relative', color: 'white', mt: 10, fontFamily: "Wallpoet", }}>
+          sx={{ position: 'relative', color: 'white', mt: 5, fontFamily: "Wallpoet", }}>
           How It Works
         </Typography>
         <Typography align='center' variant='h5'
@@ -30,12 +30,12 @@ const Process = () =>
           data-aos-delay='200'
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          sx={{ px: 5, py: 10 }}>
+          sx={{  py: 3 }}>
           <Box sx={{
             overflow: 'hidden',
             maxWidth: '100%',
-            height: '250px',
-            borderRadius: '20px',
+            height: '400px',
+
 
             backgroundImage: `url(${PlanningPhoto})`,
             backgroundSize: 'cover',
@@ -65,8 +65,8 @@ const Process = () =>
           <Box sx={{
             overflow: 'hidden',
             maxWidth: '100%',
-            height: '250px',
-            borderRadius: '20px',
+            height: '400px',
+
             backgroundImage: `url(${DevelopmentPhoto})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
@@ -96,8 +96,8 @@ const Process = () =>
           <Box sx={{
             overflow: 'hidden',
             maxWidth: '100%',
-            height: '250px',
-            borderRadius: '20px',
+            height: '400px',
+
             backgroundImage: `url(${DealPhoto})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',

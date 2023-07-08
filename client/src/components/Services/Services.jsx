@@ -9,12 +9,12 @@ const Services = () =>
   return (
     <Box id="services" component="section" sx={featureStyles.sectionWrapper}>
       <Container>
-        <Typography variant="h1" align="center" sx={{ position: 'relative', color: 'white', mt: 20, fontFamily: "Wallpoet", }}>
+        <Typography variant="h1" align="center" sx={{ position: 'relative', color: 'white', mt: 5, fontFamily: "Wallpoet", }}>
           What We Offer
         </Typography>
         <Typography align="center" color='white' variant="h5" paragraph sx={{
           position: 'relative',
-          mt: 10
+          mt: 5
         }} >Everything For Your Business To Succeed Online</Typography>
         <Box >
           <Container maxWidth='lg' sx={featureStyles.containerWrapper}>
